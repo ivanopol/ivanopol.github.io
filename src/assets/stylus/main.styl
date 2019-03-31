@@ -1,0 +1,120 @@
+@import '../../../node_modules/jeet/stylus/jeet/index'
+@import '../fonts/fregat/fregat'
+
+reset();
+
+bg = #fafaff
+select = #e7e4fd
+active = #c1c1f9
+blue = #619ef7
+black = #312a20
+dark = #43443e
+gray = #8c8c8c
+
+html 
+  font-family 'Fregat'
+  font-size 62.5%
+
+.container 
+  *zoom 1
+  width auto
+  max-width: 1605px
+  float none
+  display block
+  margin-right auto
+  margin-left auto
+  padding-left 60px
+  padding-right 30px
+  &:before, &:after 
+    content ''
+    display table
+  &:after 
+    clear: both;
+  .block 
+    *zoom 1
+    float left
+    clear none
+    text-align inherit
+
+.substrate 
+  background-color: bg
+  padding: 30px 0
+  width: 100vw;
+  height: 100vh;
+
+.menu
+  display flex
+  flex-wrap nowrap
+  justify-content space-between
+  .logo
+    float left
+    padding-top 18px
+    img 
+      width 8.5vw
+
+  nav
+    margin-top 27px
+    a
+      float left
+      color dark
+      font-size 1.5vw
+      text-decoration none
+      margin-right 70px
+
+.appeal
+  margin-top 118px
+  width 37%
+  h1 
+    font-size 4vw
+    font-weight bold
+    line-height 6.3vw
+    color black
+  h2
+    font-size 1.7vw
+    font-weight 400
+    letter-spacing 0.7vw
+    color dark
+    text-transform uppercase
+    margin-bottom 16px
+
+  .underline
+    background-color blue
+    width 146px
+    height 8px
+    border-radius 20px
+  
+  p 
+    color gray
+    font-size 1.2vw
+    line-height 1.9vw
+    width 80%
+    margin 15px 0 40px
+
+  .button
+    display block
+    float left
+    background-color select
+    color black
+    font-size 1.2vw
+    font-weight 700
+    letter-spacing 1px
+    text-transform uppercase
+    text-decoration none
+    padding 16px 23px 12px 21px
+    border-radius: 30px
+    transition background 0.2s ease-out
+    &:hover
+      background active
+    .icon_pdf
+      width 27px
+      height 30px
+      background url('./assets/icons/pdf.svg') no-repeat left center
+      display inline-block
+      margin-left 9px
+      vertical-align middle
+      position relative
+      top -2px
+.illustration
+  width 62%
+    
+  
