@@ -14,22 +14,23 @@ gray = #8c8c8c
 html 
   font-family 'Fregat'
   font-size 62.5%
+  overflow-x hidden 
+  box-sizing border-box
 
 .container 
   *zoom 1
   width auto
-  max-width: 1605px
+  max-width 1605px
   float none
   display block
   margin-right auto
   margin-left auto
-  padding-left 60px
-  padding-right 30px
+  padding 0 3.19vw
   &:before, &:after 
     content ''
     display table
   &:after 
-    clear: both;
+    clear both
   .block 
     *zoom 1
     float left
@@ -37,32 +38,30 @@ html
     text-align inherit
 
 .substrate 
-  background-color: bg
-  padding: 30px 0
-  width: 100vw;
-  height: 100vh;
+  background-color bg
+  padding 1.57vw 0
+  width 100vw
+  height 100vh
 
 .menu
   display flex
   flex-wrap nowrap
   justify-content space-between
   .logo
-    float left
-    padding-top 18px
     img 
       width 8.5vw
 
   nav
-    margin-top 27px
+    margin-top 1.41vw
     a
       float left
       color dark
       font-size 1.5vw
       text-decoration none
-      margin-right 70px
+      margin-right 3.7vw
 
 .appeal
-  margin-top 118px
+  margin-top 6.3vw
   width 37%
   h1 
     font-size 4vw
@@ -75,12 +74,12 @@ html
     letter-spacing 0.7vw
     color dark
     text-transform uppercase
-    margin-bottom 16px
+    margin-bottom 0.9vw
 
   .underline
     background-color blue
-    width 146px
-    height 8px
+    width 7.8vw
+    height 0.42vw
     border-radius 20px
   
   p 
@@ -88,7 +87,7 @@ html
     font-size 1.2vw
     line-height 1.9vw
     width 80%
-    margin 15px 0 40px
+    margin 0.8vw 0 2.13vw
 
   .button
     display block
@@ -100,21 +99,25 @@ html
     letter-spacing 1px
     text-transform uppercase
     text-decoration none
-    padding 16px 23px 12px 21px
+    padding 0.85vw 1.23vw 0.64vw 1.2vw
     border-radius: 30px
     transition background 0.2s ease-out
     &:hover
       background active
     .icon_pdf
-      width 27px
-      height 30px
+      width 1.45vw
+      height 1.6vw
       background url('./assets/icons/pdf.svg') no-repeat left center
       display inline-block
-      margin-left 9px
+      margin-left 0.48vw
       vertical-align middle
       position relative
       top -2px
 .illustration
   width 62%
+  img 
+    width 48.8vw
+    float right 
+
     
   
