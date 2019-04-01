@@ -31,25 +31,30 @@ html
     display table
   &:after 
     clear both
-  .block 
-    *zoom 1
-    float left
-    clear none
-    text-align inherit
+  .block_wrapper
+    display flex
+    flex-wrap nowrap
+    justify-content center
+    .block 
+      *zoom 1
+      clear none
+      text-align inherit
 
 .substrate 
   background-color bg
   padding 1.57vw 0
   width 100vw
-  height 100vh
+  padding 1.57vw 0 5vw
 
 .menu
   display flex
   flex-wrap nowrap
-  justify-content space-between
+  justify-content space-around
   .logo
     img 
       width 8.5vw
+      left: -3.2vw;
+      position: relative;
 
   nav
     margin-top 1.41vw
@@ -59,10 +64,13 @@ html
       font-size 1.5vw
       text-decoration none
       margin-right 3.7vw
+      &:last-child
+        margin-right 0
 
 .appeal
   margin-top 6.3vw
   width 37%
+  max-width 548px
   h1 
     font-size 4vw
     font-weight bold
@@ -79,14 +87,17 @@ html
   .underline
     background-color blue
     width 7.8vw
+    max-width 150px
     height 0.42vw
+    max-height 8px
     border-radius 20px
   
-  p 
+  p
     color gray
     font-size 1.2vw
     line-height 1.9vw
     width 80%
+    max-width 438px
     margin 0.8vw 0 2.13vw
 
   .button
@@ -113,11 +124,9 @@ html
       vertical-align middle
       position relative
       top -2px
-.illustration
-  width 62%
-  img 
-    width 48.8vw
-    float right 
 
+.illustration
+  img 
+    width 47.8vw
     
-  
+@import 'media.styl'
