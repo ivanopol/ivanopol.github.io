@@ -17,6 +17,41 @@ html
   overflow-x hidden 
   box-sizing border-box
 
+.button
+  display block
+  background-color select
+  color black
+  font-size 1.2vw
+  font-weight 700
+  line-height 1.2vw
+  letter-spacing 1px
+  text-transform uppercase
+  text-decoration none
+  padding 0.85vw 1.23vw 0.64vw 1.2vw
+  border-radius: 50px
+  transition background 0.2s ease-out
+  &:hover
+    background active
+  .icon_pdf
+  .icon_zoom
+    width 1.45vw
+    height 1.6vw
+    margin-left 0.48vw
+    display inline-block    
+    vertical-align middle
+    position relative
+    top -2px  
+  .icon_pdf
+    background url('./assets/icons/pdf.svg') no-repeat left center
+  .icon_zoom
+    background url('./assets/icons/zoom.svg') no-repeat left center
+
+.img_wrapper
+  height 18.8vw
+  display flex
+  flex-wrap nowrap
+  justify-content center  
+  align-items center  
 .container 
   *zoom 1
   width auto
@@ -42,7 +77,6 @@ html
 
 .substrate 
   background-color bg
-  padding 1.57vw 0
   width 100vw
   padding 1.57vw 0 5vw
 
@@ -101,32 +135,110 @@ html
     margin 0.8vw 0 2.13vw
 
   .button
-    display block
     float left
-    background-color select
-    color black
-    font-size 1.2vw
-    font-weight 700
-    letter-spacing 1px
-    text-transform uppercase
-    text-decoration none
-    padding 0.85vw 1.23vw 0.64vw 1.2vw
-    border-radius: 30px
-    transition background 0.2s ease-out
-    &:hover
-      background active
-    .icon_pdf
-      width 1.45vw
-      height 1.6vw
-      background url('./assets/icons/pdf.svg') no-repeat left center
-      display inline-block
-      margin-left 0.48vw
-      vertical-align middle
-      position relative
-      top -2px
 
 .illustration
   img 
     width 47.8vw
-    
+.slide
+  max-height 975px
+  height 50.8vw
+  display flex
+  justify-content center
+  align-items center
+  .content_wrapper
+    max-width: 610px
+    width 31.78vw
+    img
+      display block
+      &.pgti_img
+        max-width 171px
+        width 8.91vw
+      &.pnipu_img
+        max-width 210px
+        width 11vw
+      &.avatar
+        max-width 281px
+        width 16.356vw
+        max-height 281px
+        height 16.356vw
+        border-radius 200px
+        border 0.68vw solid select
+        border-right-width 1.04vw
+        border-bottom-width 1.04vw
+        margin 0 auto 3.66vw
+    p
+      font-size 1.567vw
+      line-height 2.09vw
+      position relative
+      &.born:before
+        content ""
+        background url('./assets/icons/born.svg') no-repeat center center
+        max-width 32px
+        width 1.667vw
+        max-height 58px
+        height 3.021vw
+        display block
+        position absolute
+        left -3.334vw
+        top -0.834vw
+      &.born:after
+        content ""
+        display block
+        background-color blue
+        width 7.8vw
+        max-width 150px
+        height 0.42vw
+        max-height 8px
+        border-radius 20px
+        margin 1.511vw auto 0
+      &.pgti
+      &.pnipu
+        margin-bottom 2.345vw
+      &.pgti:before
+      &.pnipu:before
+        content ""
+        background url('./assets/icons/study.svg') no-repeat center center
+        max-width 51px
+        width 2.605vw
+        max-height 32px
+        height 1.667vw
+        display block
+        position absolute
+        left -3.594vw   
+.siema_wrapper
+  position relative
+  .button_wrapper
+    text-align center
+    .button
+      display inline-block
+  .arrow
+    max-width 88px
+    max-height 88px
+    width 4.587vw
+    height 4.587vw
+    display block
+    position absolute
+    top 50%
+    cursor pointer
+    border-radius 50px
+    span
+      color gray
+      font-size 1vw
+      line-height 1.7vw
+      position absolute
+      top 5.21vw
+  .arrow_left
+    left 6.801vw
+    background bg url('./assets/icons/arrow_left.svg') no-repeat center
+  .arrow_right
+    right 6.801vw
+    background bg url('./assets/icons/arrow_right.svg') no-repeat center
+  .arrow_left
+  .arrow_right
+    background-size 73%
+    transition background 0.2s ease-out
+    &:hover
+      background-color select
+      
 @import 'media.styl'
