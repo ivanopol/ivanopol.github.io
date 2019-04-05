@@ -97,7 +97,77 @@
           v-if="arrowRight !== ''"
         )
           span {{arrowRight}}
-          
+      div#experience.substrate
+        div.title Опыт работы
+        div.container
+          div.timeline_block
+            span.date 2006 &mdash; 2011
+            | Разработка логотипов, веб-дизайна и сайтов.
+            | Свой первый интернет-магазин рыболовных товаров.
+          div.timeline_block
+            span.date 2011 &mdash; 2012
+            span.company Тенториум
+            span.position Администратор сайтов в компании
+            | Администрировал и дорабатывал сайты:
+            br
+            | 1)
+            a(
+              href="https://tentorium.ru"
+              target="_blank"
+               rel="nofollow"
+            ) tentorium.ru
+            |  (1C Битрикс);
+            br
+            | 2)
+            span(
+              class="no_site"
+              title="Сайт уже не работает"
+            ) save-bee.ru (1C Битрикс);
+            br
+            | 3) Внутренний корпоративный портал компании (1C Битрикс);
+            br
+            | 4)
+            a(
+              href="http://apispa.ru"
+              target="_blank"
+              rel="nofollow"
+            ) apispa.ru.
+            br
+            | Также, занимался: разработкой электронного документооборота
+            | компании (разработка архитектуры&nbsp;БД, программирование под CMS Bitrix),
+            | разработкой модуля личного кабинета для tentorium.ru (отчёты, диаграммы,
+            | одноразовые ссылки на&nbsp;документы т.д.), написанием &laquo;гаджетов&raquo;
+            | для корпоративного портала, разработкой электронных конкурсов и&nbsp;тестов
+            | для корпоративного портала (на&nbsp;JQuery + MySQL) размещением информации
+            | и&nbsp;аккаунтов в&nbsp;социальных сетях.
+          div.timeline_block
+            span.date 2013
+            span.company Federal Finance
+            span.position PHP программист
+            | Работа с Zend Framework над системой сбора
+            | заявок на кредиты в банки. Вёрстка.
+          div.timeline_block
+            span.date 2014
+            span.company Студия &laquo;Помидор&raquo;
+            span.position PHP программист
+            | Разработка сайтов на&nbsp;Drupal, Yii. Верстка,
+            | программирование. Архитектура&nbsp;БД.
+          div.timeline_block
+            span.date 2014 &mdash; 2017
+            span.company WBMS interactive
+            span.position SEO-оптимизатор, веб-программист
+            | Продвижение сайтов, работа над отдельными сайтами
+            | (верстка, программирование), создание лендингов. В&nbsp;основном на&nbsp;MODx.
+          div.timeline_block
+            span.date 2017
+            span.company &laquo;Модерн&raquo;
+            span.position Программист-верстальщик
+            | Адаптивная вёрстка, JS, немного back-end'а.
+          div.timeline_block
+            span.date 2014 &mdash; 2019
+            span.company АН &laquo;Новые дома&raquo;
+            span.position Разработчик и администратор сайта
+            | Создание, развитие, поддержка и администрирование сайта.
 </template>
 
 <script>

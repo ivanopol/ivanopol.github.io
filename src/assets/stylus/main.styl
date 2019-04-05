@@ -6,6 +6,7 @@ reset();
 bg = #fafaff
 select = #e7e4fd
 active = #c1c1f9
+dark_active = #6558a0
 blue = #619ef7
 black = #312a20
 dark = #43443e
@@ -16,6 +17,23 @@ html
   font-size 62.5%
   overflow-x hidden 
   box-sizing border-box
+
+underline()
+  content ""
+  display block
+  background-color blue
+  width 7.8vw
+  max-width 150px
+  height 0.42vw
+  max-height 8px
+  border-radius 20px
+  margin 1.511vw auto 0
+
+  @media screen and (min-width: 1920px)
+    margin 29px auto 0
+
+a
+  color blue
 
 .button
   display block
@@ -183,15 +201,7 @@ html
         left -3.334vw
         top -0.834vw
       &.born:after
-        content ""
-        display block
-        background-color blue
-        width 7.8vw
-        max-width 150px
-        height 0.42vw
-        max-height 8px
-        border-radius 20px
-        margin 1.511vw auto 0
+        underline()
       &.pgti
       &.pnipu
         margin-bottom 2.345vw
@@ -240,5 +250,66 @@ html
     transition background 0.2s ease-out
     &:hover
       background-color select
-      
+.title
+  font-size 1.875vw
+  font-weight bold
+  text-align center
+  letter-spacing 0.104vw
+  margin-top 3.75vw
+  margin-bottom 4.2708vw
+  &:after
+    underline()
+
+.timeline_block
+  font-size 1.5625vw
+  line-height 1.979166667vw
+  margin 0 auto
+  margin-left 22.916vw
+  padding-bottom 7.65625vw
+  padding-left 3.854166667vw
+  width 61% 
+  max-width 904px
+  border-left 0.46875vw solid dark_active
+  position relative
+  &:last-child
+    padding-bottom 2.604vw
+    border-left-color transparent
+  &:before
+    content ""
+    display block
+    width 1.5625vw
+    height 1.5625vw
+    background-color white
+    border 0.46875vw solid dark_active
+    border-radius 1.78125vw
+    position absolute
+    box-sizing content-box
+    top -0.104166667vw
+    left -1.484375vw
+  span
+    &.date
+    &.company
+    &.position
+      display block
+    &.date
+      font-size 1.979vw
+      font-weight bold
+      letter-spacing 0.05208vw
+      position absolute
+      left -17.0833vw
+      top 0
+      width 13.0208vw
+      text-align right
+    &.company
+      font-size 1.979vw
+      font-weight bold
+      letter-spacing 0.104vw
+    &.position
+      font-size 1.4583vw
+      font-style italic
+      color gray
+      margin 0.2604vw 0 0.5208vw
+    &.no_site
+      color gray
+ 
 @import 'media.styl'
