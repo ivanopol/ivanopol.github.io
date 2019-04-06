@@ -29,7 +29,7 @@
               img(
                 src="./assets/svg/picture.svg"
               )
-      div.siema_wrapper
+      div#history.siema_wrapper
         siema(
           class="siema s"
           ref="siema"
@@ -110,7 +110,7 @@
             span.position Администратор сайтов в компании
             | Администрировал и дорабатывал сайты:
             br
-            | 1)
+            | 1)&nbsp;
             a(
               href="https://tentorium.ru"
               target="_blank"
@@ -118,7 +118,7 @@
             ) tentorium.ru
             |  (1C Битрикс);
             br
-            | 2)
+            | 2)&nbsp;
             span(
               class="no_site"
               title="Сайт уже не работает"
@@ -126,7 +126,7 @@
             br
             | 3) Внутренний корпоративный портал компании (1C Битрикс);
             br
-            | 4)
+            | 4)&nbsp;
             a(
               href="http://apispa.ru"
               target="_blank"
@@ -168,6 +168,104 @@
             span.company АН &laquo;Новые дома&raquo;
             span.position Разработчик и администратор сайта
             | Создание, развитие, поддержка и администрирование сайта.
+      div#skills
+        div.title Навыки
+        div.container
+          div.tabs
+            ul
+              li(
+                v-for="tab in tabs"
+                :class="{'is-active': tab.active}"
+              )
+                a(@click="setActive(tab)") {{tab.caption}}
+          div(
+            class="skills"
+            v-if="tabs[0].active === true"
+          )
+            div.skills_block
+              div.skills_title Языки
+              div.skills_inner
+                div.skills_row
+                  div.skills_row_name PHP 5-7
+                  div.skills_row_value
+                    div.skills_row_value_100.skills_row_value_up
+                div.skills_row
+                  div.skills_row_name Python
+                  div.skills_row_value
+                    div.skills_row_value_10.skills_row_value_up
+            div.skills_block
+              div.skills_title Фреймворки и CMS
+              div.skills_inner
+                div.skills_row
+                  div.skills_row_name MODx
+                  div.skills_row_value
+                    div.skills_row_value_100.skills_row_value_down
+                div.skills_row
+                  div.skills_row_name Laravel
+                  div.skills_row_value
+                    div.skills_row_value_50.skills_row_value_up
+                div.skills_row
+                  div.skills_row_name Yii
+                  div.skills_row_value
+                    div.skills_row_value_50.skills_row_value_down
+                div.skills_row
+                  div.skills_row_name Drupal
+                  div.skills_row_value
+                    div.skills_row_value_25.skills_row_value_down
+                div.skills_row
+                  div.skills_row_name 1C Битрикс
+                  div.skills_row_value
+                    div.skills_row_value_10.skills_row_value_down
+          div(
+            class="skills"
+            v-if="tabs[1].active === true"
+          )
+            div.skills_block
+              div.skills_title Языки
+              div.skills_inner
+                div.skills_row
+                  div.skills_row_name Javascript
+                  div.skills_row_value
+                    div.skills_row_value_50.skills_row_value_up
+            div.skills_block
+              div.skills_title Фреймворки
+              div.skills_inner
+                div.skills_row
+                  div.skills_row_name JQuery
+                  div.skills_row_value
+                    div.skills_row_value_100.skills_row_value_down
+                div.skills_row
+                  div.skills_row_name VueJS
+                  div.skills_row_value
+                    div.skills_row_value_10.skills_row_value_up
+                div.skills_row
+                  div.skills_row_name React
+                  div.skills_row_value
+                    div.skills_row_value_10.skills_row_value_up
+            div.skills_block
+              div.skills_title Вёрстка
+              div.skills_inner
+                div.skills_row
+                  div.skills_row_name CSS, SCSS, Stylus
+                  div.skills_row_value
+                    div.skills_row_value_100.skills_row_value_up
+                div.skills_row
+                  div.skills_row_name Photoshop, Ai
+                  div.skills_row_value
+                    div.skills_row_value_100.skills_row_value_up
+          div.skills_other
+            div.skills_other_block
+              div.skills_other_title Окружение
+              div.skills_other_list Linux (Ubuntu, Debian, Arch, Deepin, Solus)
+              div.skills_other_list Docker, Vagrant, XAMPP, Ubuntu server на VirtualBox
+              div.skills_other_list Git, Github, Bitbucket
+              div.skills_other_list Composer, Webpack & Gulp
+            div.skills_other_block
+              div.skills_other_title БД
+              div.skills_other_list MySQL
+              div.skills_other_title Есть понимание
+              div.skills_other_list ООП, PSR, SOLID, KISS
+
 </template>
 
 <script>
@@ -180,10 +278,25 @@ export default {
       },
       arrowLeft: '',
       arrowRight: 'Образование среднее',
-      showModal: false
+      showModal: false,
+      tabs: [
+        {
+          caption: 'Back-end',
+          active: true
+        },
+        {
+          caption: 'Front-end',
+          active: false
+        }
+      ]
     }
   },
   methods: {
+    setActive (tab) {
+      this.tabs.forEach(el => {
+        el.active = el === tab
+      })
+    },
     change (arrowLeft, arrowRight) {
       var el = this.$refs.siema.siema
       var current = el.currentSlide
