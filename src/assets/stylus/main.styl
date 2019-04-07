@@ -9,6 +9,7 @@ active = #c1c1f9
 dark_active = #6558a0
 blue = #619ef7
 black = #312a20
+black_active = #000000
 dark = #43443e
 gray = #8c8c8c
 green = #c5edbe
@@ -71,6 +72,12 @@ a
   .icon_zoom
     background url('./assets/icons/zoom.svg') no-repeat left center
 
+#progress-container-el 
+  background-color select !important
+   
+#progress-el 
+  background-color active !important
+
 .img_wrapper
   height 18.8vw
   display flex
@@ -92,6 +99,7 @@ a
   &:after 
     clear both
   .block_wrapper
+    margin-top 8.59375vw
     display flex
     flex-wrap nowrap
     justify-content center
@@ -106,14 +114,22 @@ a
   padding 1.57vw 0 5vw
 
 .menu
+  width 100vw
+  background-color bg
   display flex
   flex-wrap nowrap
-  justify-content space-around
+  justify-content center
+  position absolute
+  padding-top 1.57vw
+  top 0
+  left 0
+  z-index 10  
   .logo
+    width 37%
+    max-width 548px
     img 
       width 8.5vw
-      left: -3.2vw;
-      position: relative;
+      position relative
 
   nav
     margin-top 1.41vw
@@ -123,9 +139,20 @@ a
       font-size 1.5vw
       text-decoration none
       margin-right 3.7vw
+      position relative
       &:last-child
         margin-right 0
-
+      // &.is-active
+      //   color black_active
+      // &.is-active:after
+      //   content ""
+      //   display block
+      //   width 100%
+      //   border-bottom 0.364583333vw dotted blue
+      //   position absolute
+      //   z-index -1
+      //   top 1.5625vw
+        
 .appeal
   margin-top 6.3vw
   width 37%

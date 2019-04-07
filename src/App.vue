@@ -1,17 +1,33 @@
 <template lang="pug">
   .wrapper
     #app
+      VueScrollProgress
       div#greeting.substrate
         .container
           div.menu
             div.logo
               img(src="./assets/svg/logo_ivanopol_portfolio.svg")
-            nav
-              a(href="#greeting") Приветствие
-              a(href="#history") История
-              a(href="#experience") Опыт работы
-              a(href="#skills") Навыки
-              a(href="#contacts") Контакты
+            scrollactive.nav
+              a(
+              href="#greeting"
+              class="scrollactive-item"
+              ) Приветствие
+              a(
+              href="#history"
+              class="scrollactive-item"
+              ) История
+              a(
+              href="#experience"
+              class="scrollactive-item"
+              ) Опыт работы
+              a(
+              href="#skills"
+              class="scrollactive-item"
+              ) Навыки
+              a(
+              href="#contacts"
+              class="scrollactive-item"
+              ) Контакты
           div.block_wrapper
             div.block.appeal
               h1 Дмитрий Иванов
@@ -265,7 +281,8 @@
               div.skills_other_list MySQL
               div.skills_other_title Есть понимание
               div.skills_other_list ООП, PSR, SOLID, KISS
-
+      div#books.substrate
+        div.title Последние прочитанные книги
 </template>
 
 <script>
