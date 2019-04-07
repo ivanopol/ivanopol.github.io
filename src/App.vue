@@ -7,27 +7,12 @@
           div.menu
             div.logo
               img(src="./assets/svg/logo_ivanopol_portfolio.svg")
-            scrollactive.nav
-              a(
-              href="#greeting"
-              class="scrollactive-item"
-              ) Приветствие
-              a(
-              href="#history"
-              class="scrollactive-item"
-              ) История
-              a(
-              href="#experience"
-              class="scrollactive-item"
-              ) Опыт работы
-              a(
-              href="#skills"
-              class="scrollactive-item"
-              ) Навыки
-              a(
-              href="#contacts"
-              class="scrollactive-item"
-              ) Контакты
+            nav
+              a(href="#greeting") Приветствие
+              a(href="#history") История
+              a(href="#experience") Опыт работы
+              a(href="#skills") Навыки
+              a(href="#contacts") Контакты
           div.block_wrapper
             div.block.appeal
               h1 Дмитрий Иванов
