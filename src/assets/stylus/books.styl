@@ -1,0 +1,58 @@
+#books
+  padding-bottom 7.65625vw
+  .books_wrapper
+    max-width 1298px
+    max-height 600px
+    width 67.604vw
+    height 31.25vw
+    margin 0 auto
+    ul 
+      overflow-x: auto
+      overflow-y: hidden
+      max-width 2604px
+      width 135.625vw
+      li
+        float left
+        margin-right 1.145833vw
+        &:last-child
+          margin-right 0!important
+        a
+          border 0.729vw solid active
+          display inline-block
+          height 29.427vw
+          transition border-color 0.3s ease-out
+          user-select none
+          position relative
+          display flex
+          flex-wrap nowrap
+          justify-content center  
+          align-items center          
+          &:after
+            content ""
+            display block
+            background url(./assets/icons/paper-plane.svg) no-repeat 15px center
+            background-color rgba(40%, 35%, 63%, 0.95)
+            background-size 60%
+            width 5.2083vw
+            height 5.2083vw
+            position absolute
+            border-radius: 2.604vw
+            transition all .3s ease-out
+            opacity 0
+          &:hover
+            border-color #adadf7
+            &:after
+              opacity 1
+            img
+              -webkit-filter brightness(110%)
+              filter brightness(110%)
+          img
+            width 20.15625vw
+            height 27.96875vw
+            -webkit-filter brightness(95%)
+            filter brightness(95%)          
+            -webkit-transition all .3s ease
+            -moz-transition all .3s ease
+            -o-transition all .3s ease
+            transition all .3s ease
+            user-select none

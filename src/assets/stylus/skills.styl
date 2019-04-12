@@ -1,0 +1,103 @@
+#skills
+  margin-bottom 4.89583vw
+.tabs
+  margin 0 auto 3.64583vw
+  ul 
+    display flex
+    flex-wrap nowrap
+    justify-content center  
+    align-items center    
+    li
+      float left
+      &:first-child a
+        border-top-left-radius 2.604vw
+        border-bottom-left-radius 2.604vw
+      &:last-child a
+        border-top-right-radius 2.604vw
+        border-bottom-right-radius 2.604vw        
+      &.is-active a
+          color black
+          cursor default
+          background-color active
+      a 
+        color gray
+        font-size 1.5625vw
+        background-color select
+        padding 0.7291vw 1.666vw
+        transition background 0.2s ease-out
+        cursor pointer
+        user-select none
+.skills
+    width 77.1875vw
+    margin 0 auto 1.82291vw
+    .skills_block
+        font-size 1.5625vw
+        margin-bottom 1.5625vw
+        .skills_title
+            font-weight bold
+            margin-bottom 1.5625vw
+        .skills_inner
+            .skills_row
+                border-radius 5.208333333vw
+                margin-bottom 0.677vw
+                padding 0 0 0 1.666vw
+                background-color bg
+                overflow hidden
+                .skills_row_name
+                    width 12.76vw
+                    font-weight normal
+                    line-height 3.125vw
+                    display inline-block
+                    vertical-align middle
+                .skills_row_value
+                    width 62.76vw
+                    height 3.125vw
+                    display inline-block
+                    vertical-align middle
+                    position relative
+                    &>div
+                        height 100%
+                        position relative
+                        &.skills_row_value_up:after
+                        &.skills_row_value_down:after
+                            width 1.7708vw
+                            height 1.979vw
+                            display block
+                            top calc(50% - 0.98958vw)
+                            right -2.60416vw
+                            position absolute
+                        &.skills_row_value_100.skills_row_value_up:after
+                        &.skills_row_value_100.skills_row_value_down:after
+                            right 1.0416vw
+                        &.skills_row_value_up:after
+                            content ""
+                            background url('./assets/icons/skills_up.svg') no-repeat left center
+                        &.skills_row_value_down:after
+                            content ""
+                            background url('./assets/icons/skills_down.svg') no-repeat left center
+                    .skills_row_value_10
+                        background-color red
+                        width 10%
+                    .skills_row_value_25
+                        background-color orange
+                        width 25%
+                    .skills_row_value_50
+                        background-color yellow
+                        width 50%
+                    .skills_row_value_100
+                        background-color green
+                        width 100%
+.skills_other
+    width 77.1875vw
+    margin 0 auto  
+    overflow hidden
+    .skills_other_block
+      float left
+      font-size 1.5625vw
+      margin-right 10.4166vw
+      .skills_other_title
+        margin-top 2.34375vw
+        font-weight bold
+      .skills_other_list
+        margin-top 1.302083vw
+        font-weight normal

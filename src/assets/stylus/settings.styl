@@ -1,0 +1,166 @@
+bg = #fafaff
+bg = #f1f1fa
+select = #e7e4fd
+active = #c1c1f9
+dark_active = #6558a0
+blue = #619ef7
+message_bg = #35a2ff
+black = #312a20
+black_active = #000000
+dark = #43443e
+gray = #8c8c8c
+green = #c5edbe
+green_active = #9fdd92
+yellow = #ebdda7
+orange = #e8c6a7
+red = #e2c6bf
+red_active = #c18e87
+
+html 
+  font-family 'Fregat'
+  font-size 62.5%
+  overflow-x hidden 
+  box-sizing border-box
+
+textarea
+input 
+  font-family 'Fregat'
+  color black
+
+.smooth-scrollbar
+  overflow unset!important
+
+.scrollbar-track
+  background-color active!important
+  border-radius 15px
+
+.scrollbar-thumb
+  background-color dark_active!important
+  cursor pointer
+
+underline()
+  content ""
+  display block
+  background-color blue
+  width 7.8vw
+  max-width 150px
+  height 0.42vw
+  max-height 8px
+  border-radius 20px
+  margin 1.511vw auto 0
+
+  @media screen and (min-width: 1920px)
+    margin 29px auto 0
+
+a
+  color blue
+
+.button
+  display block
+  background-color select
+  color black
+  font-size 1.2vw
+  font-weight 700
+  line-height 1.2vw
+  letter-spacing 1px
+  text-transform uppercase
+  text-decoration none
+  padding 0.85vw 1.23vw 0.64vw 1.2vw
+  border-radius: 50px
+  transition background 0.2s ease-out
+  user-select none
+  &:hover
+    background active
+  .icon_pdf
+  .icon_zoom
+    width 1.45vw
+    height 1.6vw
+    margin-left 0.48vw
+    display inline-block    
+    vertical-align middle
+    position relative
+    top -2px  
+  .icon_pdf
+    background url('./assets/icons/pdf.svg') no-repeat left center
+  .icon_zoom
+    background url('./assets/icons/zoom.svg') no-repeat left center
+
+#progress-container-el 
+  background-color select !important
+   
+#progress-el 
+  background-color active !important
+
+.img_wrapper
+  height 18.8vw
+  display flex
+  flex-wrap nowrap
+  justify-content center  
+  align-items center  
+.container 
+  *zoom 1
+  width auto
+  max-width 1605px
+  float none
+  display block
+  margin-right auto
+  margin-left auto
+  padding 0 3.19vw
+  &:before, &:after 
+    content ''
+    display table
+  &:after 
+    clear both
+  .block_wrapper
+    margin-top 8.59375vw
+    display flex
+    flex-wrap nowrap
+    justify-content center
+    .block 
+      *zoom 1
+      clear none
+      text-align inherit
+
+.substrate 
+  background-color bg
+  width 100vw
+  padding 1.57vw 0 5vw
+
+.menu
+  width 100vw
+  background-color bg
+  display flex
+  flex-wrap nowrap
+  justify-content center
+  position absolute
+  padding-top 1.57vw
+  top 0
+  left 0
+  z-index 10  
+  .logo
+    width 37%
+    max-width 548px
+    img 
+      width 8.5vw
+      position relative
+
+  nav
+    margin-top 1.41vw
+    a
+      float left
+      color dark
+      font-size 1.5vw
+      text-decoration none
+      margin-right 3.7vw
+      position relative
+      &:last-child
+        margin-right 0
+.title
+  font-size 1.875vw
+  font-weight bold
+  text-align center
+  letter-spacing 0.104vw
+  margin-top 3.75vw
+  margin-bottom 4.2708vw
+  &:after
+    underline()
