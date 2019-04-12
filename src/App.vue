@@ -270,7 +270,7 @@
         div.title Последние прочитанные книги
         div.books_wrapper
           smooth-scrollbar(
-            :options="{alwaysShowTracks: true,thumbMinSize:100}"
+            :options="{alwaysShowTracks: true}"
           )
             ul
               li
@@ -321,6 +321,49 @@
                   img(
                   src="./assets/images/books/php_objecty_shablony_i_metodiki.jpg"
                   )
+      #contacts
+        div.title Контакты
+        div.appeal_wrapper
+          div.message Заинтересованы в сотрудничестве?
+                    br
+                    |  Вы можете отправить мне сообщение
+                    |  или написать в социальных сетях.
+        form
+          textarea
+          input(
+            type="submit"
+            class="button"
+            value="Отправить"
+          )
+        footer
+          ul.contacts
+            li
+              a(
+                href="https://moikrug.ru/ivanopol"
+                class="moi_krug"
+                target="_blank"
+              )
+                img(
+                  src="./assets/svg/contacts/moi_krug.svg"
+                )
+            li
+              a(
+                href="https://github.com/ivanopol"
+                class="github"
+                target="_blank"
+              )
+                img(
+                  src="./assets/svg/contacts/github.svg"
+                )
+            li
+              a(
+                href="https://www.linkedin.com/in/ivanopol"
+                class="linkedin"
+                target="_blank"
+              )
+                img(
+                  src="./assets/svg/contacts/linkedin.svg"
+                )
 </template>
 
 <script>
