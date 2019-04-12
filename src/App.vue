@@ -268,12 +268,68 @@
               div.skills_other_list ООП, PSR, SOLID, KISS
       div#books.substrate
         div.title Последние прочитанные книги
+        div.books_wrapper
+          smooth-scrollbar(
+            :options="{alwaysShowTracks: true,thumbMinSize:100}"
+          )
+            ul
+              li
+                a(
+                href="https://www.ozon.ru/context/detail/id/139411597"
+                target="_blank"
+                )
+                  img(
+                  src="./assets/images/books/using_docker.jpg"
+                  )
+              li
+                a(
+                href="https://www.amazon.com/Design-Patterns-Laravel-Kelt-Dockins/dp/1484224507"
+                target="_blank"
+                )
+                  img(
+                  src="./assets/images/books/design_patterns_in_php_and_laravel.jpg"
+                  )
+              li
+                a(
+                href="https://www.ozon.ru/context/detail/id/140376487/"
+                target="_blank"
+                )
+                  img(
+                  src="./assets/images/books/djedaiskie_tehniki.jpg"
+                  )
+              li
+                a(
+                href="https://www.ozon.ru/context/detail/id/28336354/"
+                target="_blank"
+                )
+                  img(
+                  src="./assets/images/books/chistiy_kod.jpg"
+                  )
+              li
+                a(
+                href="https://www.ozon.ru/context/detail/id/144233005/"
+                target="_blank"
+                )
+                  img(
+                  src="./assets/images/books/patterny_proektirovania.jpg"
+                  )
+              li
+                a(
+                href="https://www.ozon.ru/context/detail/id/148737571/"
+                target="_blank"
+                )
+                  img(
+                  src="./assets/images/books/php_objecty_shablony_i_metodiki.jpg"
+                  )
 </template>
 
 <script>
 export default {
   data () {
     return {
+      scrollbar: {
+        alwaysShowTracks: true
+      },
       options: {
         draggable: false,
         multipleDrag: false
