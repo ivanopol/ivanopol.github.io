@@ -15,7 +15,6 @@
     "stylus-reset": "0.0.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
-    "vue-scroll-progress": "^1.0.4",
     "vue-scrollactive": "^0.8.0",
     "vue-smooth-scrollbar": "^0.1.2",
     "vue2-perfect-scrollbar": "^1.2.0",
