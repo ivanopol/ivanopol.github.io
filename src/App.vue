@@ -20,8 +20,9 @@
               |  веб-разработкой уже много лет и&nbsp;мне это занятие очень
               | нравится. Сейчас я&nbsp;ищу работу на&nbsp;позицию
               | backend-developer или fullstack-developer.
-            a(href="./assets/pdf/Portfolio_SPA.pdf"
+            a(href="./statis/Portfolio_SPA.pdf" 
             class="button"
+            download
             ) Скачать портфолио
               span.icon_pdf
           div.block.illustration
