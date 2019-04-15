@@ -4,7 +4,7 @@
       .container
         div.menu
           div.logo
-            img(src="./assets/svg/logo_ivanopol_portfolio.svg")
+            icon-logo
           nav
             a(href="#greeting") Приветствие
             a(href="#history") История
@@ -327,6 +327,8 @@
                   br
                   |  Вы можете отправить мне сообщение
                   |  или написать в социальных сетях.
+                  div.extended_logo
+                    icon-logo
       form
         textarea
         input(
@@ -366,6 +368,8 @@
 </template>
 
 <script>
+import IconLogo from './components/icons/IconLogo.vue'
+
 export default {
   data () {
     return {
@@ -420,6 +424,9 @@ export default {
         this.arrowRight = ''
       }
     }
+  },
+  components: {
+    IconLogo
   }
 }
 </script>

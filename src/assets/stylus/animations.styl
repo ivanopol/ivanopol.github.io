@@ -1,0 +1,29 @@
+.ivanopol_logo 
+  .a  
+    fill #e7e4fd
+  .b
+    stroke #201600
+    stroke-miterlimit 10
+    stroke-width 2px
+  .b
+  .c
+    fill #e18c44
+  .d 
+    fill #201600
+  .e
+    fill #d76446
+
+.ivanopol_logo .eye {
+  animation-name: blinking;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  transform-origin: 100% 63%;    
+}
+
+@keyframes blinking {
+  0% { transform: scaleX(1) scaleY(1); } 
+  18% { transform: scaleX(1) scaleY(1); } 
+  20% { transform: scaleX(1) scaleY(0.1); } 
+  25% { transform: scaleX(1) scaleY(1); } 
+  100% { transform: scaleX(1) scaleY(1); }
+}
