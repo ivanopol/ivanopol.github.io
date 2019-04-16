@@ -1,3 +1,10 @@
+.ivanopol_logo .head
+  animation-name animationLogo
+  animation-duration 30s
+  animation-iteration-count infinite
+  animation-timing-function ease
+  transform-origin center bottom  
+
 .ivanopol_logo .eye 
   animation-name blinking
   animation-duration 4s
@@ -22,6 +29,37 @@
 
 .icon_laravel
    animation animationFramesOne 35s infinite linear
+
+.icon_born
+  #Head
+    animation animationBornAlarm 10s ease infinite 
+  #Eyes
+    animation animationBornBlinking 5s infinite linear
+
+@keyframes animationBornBlinking {
+  0% { opacity:1 }
+  47% { opacity:1 }
+  50% { opacity:0 }
+  52% { opacity:1 }
+  100% { opacity:1 }  
+}
+
+@keyframes animationBornAlarm {
+  0% { transform: translateY(0) }
+  25% { transform: translateY(1px)}
+  50% { transform: translateY(-1px) }
+  75% { transform: translateY(1px) }    
+  100% { transform: translateY(0) }  
+}
+
+@keyframes animationLogo {
+  0% { transform: rotate(0)}
+  20% { transform: rotate(2deg)}
+  25% { transform: rotate(-2deg)}
+  60% { transform: rotate(2deg)}
+  65% { transform: rotate(-2deg)}    
+  100% { transform: rotate(0)}  
+}
 
 @keyframes blinking {
   0% { transform: scaleX(1) scaleY(1); } 

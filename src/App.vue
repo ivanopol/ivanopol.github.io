@@ -43,6 +43,7 @@
               class="avatar"
             )
             p.born Родился в 1986 году (33 года) в городе Пермь.
+              icon-born
         div.slide(
           data-name="Образование среднее"
           )
@@ -367,6 +368,7 @@
 
 <script>
 import IconLogo from './components/icons/IconLogo.vue'
+import IconBorn from './components/icons/IconBorn.vue'
 import AppIllustrationIcon from './components/AppIllustrationIcon.vue'
 
 export default {
@@ -426,6 +428,7 @@ export default {
   },
   components: {
     IconLogo,
+    IconBorn,
     AppIllustrationIcon
   }
 }
