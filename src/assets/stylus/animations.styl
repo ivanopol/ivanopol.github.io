@@ -1,9 +1,25 @@
-.ivanopol_logo .eye {
-  animation-name: blinking;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  transform-origin: 100% 63%;    
-}
+.ivanopol_logo .eye 
+  animation-name blinking
+  animation-duration 4s
+  animation-iteration-count infinite
+  transform-origin 100% 63%
+
+.icon_ubuntu
+  animation rotated 50s infinite linear
+
+.icon_git2
+.icon_git
+.icon_github
+  animation animationFramesTwo 10s infinite linear
+
+.icon_vim
+.icon_bitbucket
+.icon_docker
+  animation animationFramesTwo 15s infinite linear
+
+.icon_laravel
+   animation animationFramesOne 35s infinite linear
+  
 
 @keyframes blinking {
   0% { transform: scaleX(1) scaleY(1); } 
@@ -11,4 +27,24 @@
   20% { transform: scaleX(1) scaleY(0.1); } 
   25% { transform: scaleX(1) scaleY(1); } 
   100% { transform: scaleX(1) scaleY(1); }
+}
+
+@keyframes rotated {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes animationFramesOne {
+  0% { transform: translate(0px,0px) rotate(0)}
+  20% { transform: translate(-4.322vw,-1.5625vw) rotate(10deg) }
+  50% { transform: translate(-6,927vw,2.604vw) rotate(0)}
+  70% { transform: translate(-3.2727vw,3.125vw)rotate(-30deg) }
+  100% { transform: translate(0px,0px) rotate(0) }  
+}
+
+@keyframes animationFramesTwo {
+  0% { transform: translate(0px,0px) rotate(0)}
+  30% { transform: translate(1.04166vw,-0.2604vw) rotate(10deg)}
+  70% { transform: translate(0.52083vw,0.78125vw) rotate(5deg)}
+  100% { transform: translate(0px,0px) rotate(0) }  
 }

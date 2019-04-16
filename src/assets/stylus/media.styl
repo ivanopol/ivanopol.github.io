@@ -18,7 +18,7 @@
     .menu
         padding-top 30px
         .logo
-            img 
+            svg 
                 width 163px
         nav
             margin-top 27px
@@ -39,6 +39,54 @@
             line-height 36px
             margin 15px 0 40px
     .illustration
+        #illustration
+            #background
+                width 917px
+            .computer_wrap
+                top 213px
+                left 237px
+                width 468px
+                height 400px
+            .icon_ubuntu
+                top 155px
+                left 622px                
+                width 66px
+                height 66px
+            .icon_github
+                top 10px
+                left 640px               
+                width 66px
+                height 66px
+            .icon_laravel
+                top 416px
+                left 240px
+                width 68px
+                height 47px
+            .icon_bitbucket
+                top 392px
+                left 716px
+                width 55px
+                height 60px  
+            .icon_docker
+                top 114px
+                left 318px
+                width 112px
+                height 100px     
+            .icon_git
+                top 312px
+                left 46px
+                width 36px
+                height 44px  
+            .icon_vim
+                top 268px
+                left 168px
+                width 51px
+                height 53px   
+            .icon_git2
+                top 92px
+                left 526px
+                width 47px
+                height 47px                                                                                   
         img 
             width 917px
     .slide
@@ -223,6 +271,35 @@
                             height 35px
                         &.linkedin img
                             width 169px
-                            height 45px       
-                                    
+                            height 45px  
+    .icon_ubuntu
+        animation rotated 60s infinite linear
+
+    .icon_git2
+    .icon_git
+    .icon_github
+        animation animationFramesTwo 15s infinite linear
+
+    .icon_vim
+    .icon_bitbucket
+    .icon_docker
+        animation animationFramesTwo 20s infinite linear
+
+    .icon_laravel
+        animation animationFramesOne 40s infinite linear  
+
+    @keyframes animationFramesOne {
+        0% { transform: translate(0px,0px) rotate(0)}
+        20% { transform: translate(-83px,-30px) rotate(10deg) }
+        50% { transform: translate(-133px,50px) rotate(0)}
+        70% { transform: translate(-63px,60px)rotate(-30deg) }
+        100% { transform: translate(0px,0px) rotate(0) }  
+    }
+
+    @keyframes animationFramesTwo {
+        0% { transform: translate(0px,0px) rotate(0)}
+        30% { transform: translate(20px,-5px) rotate(10deg)}
+        70% { transform: translate(10px,15px) rotate(5deg)}
+        100% { transform: translate(0px,0px) rotate(0) }  
+    }                                    
                             

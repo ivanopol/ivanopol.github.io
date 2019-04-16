@@ -26,9 +26,10 @@
             ) Скачать портфолио
               span.icon_pdf
           div.block.illustration
-            img(
-              src="./assets/svg/picture.svg"
-            )
+            app-illustration-icon
+            // img(
+            //   src="./assets/svg/picture.svg"
+            // )
     div#history.siema_wrapper
       siema(
         class="siema s"
@@ -368,17 +369,8 @@
 </template>
 
 <script>
-import IconBackground from './components/icons/IconBackground.vue'
-import IconComputer from './components/icons/IconComputer.vue'
 import IconLogo from './components/icons/IconLogo.vue'
-import IconLaravel from './components/icons/IconLaravel.vue'
-import IconDocker from './components/icons/IconDocker.vue'
-import IconVim from './components/icons/IconVim.vue'
-import IconBitbucket from './components/icons/IconBitbucket.vue'
-import IconUbuntu from './components/icons/IconUbuntu.vue'
-import IconGithub from './components/icons/IconGithub.vue'
-import IconGit from './components/icons/IconGit.vue'
-import IconGit2 from './components/icons/IconGit2.vue'
+import AppIllustrationIcon from './components/AppIllustrationIcon.vue'
 
 export default {
   data () {
@@ -437,16 +429,7 @@ export default {
   },
   components: {
     IconLogo,
-    IconLaravel,
-    IconDocker,
-    IconVim,
-    IconBitbucket,
-    IconUbuntu,
-    IconGithub,
-    IconGit,
-    IconGit2,
-    IconBackground,
-    IconComputer
+    AppIllustrationIcon
   }
 }
 </script>
