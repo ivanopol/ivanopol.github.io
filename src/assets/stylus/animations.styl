@@ -7,6 +7,9 @@
 .icon_ubuntu
   animation rotated 50s infinite linear
 
+.background
+  animation animationBackground 10s infinite linear
+
 .icon_git2
 .icon_git
 .icon_github
@@ -19,7 +22,6 @@
 
 .icon_laravel
    animation animationFramesOne 35s infinite linear
-  
 
 @keyframes blinking {
   0% { transform: scaleX(1) scaleY(1); } 
@@ -47,4 +49,10 @@
   30% { transform: translate(1.04166vw,-0.2604vw) rotate(10deg)}
   70% { transform: translate(0.52083vw,0.78125vw) rotate(5deg)}
   100% { transform: translate(0px,0px) rotate(0) }  
+}
+
+@keyframes animationBackground {
+  0% { transform: scaleX(1) scaleY(1)}
+  50% { transform: scaleX(0.97) scaleY(0.98)}
+  100% { transform: scaleX(1) scaleY(1)}  
 }

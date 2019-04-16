@@ -23,13 +23,10 @@
             a(href="./static/Portfolio_SPA.pdf"
             class="button"
             download="resume_ivanov_dmitriy"
-            ) Скачать портфолио
+            ) Скачать Резюме
               span.icon_pdf
           div.block.illustration
             app-illustration-icon
-            // img(
-            //   src="./assets/svg/picture.svg"
-            // )
     div#history.siema_wrapper
       siema(
         class="siema s"

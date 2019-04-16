@@ -19,6 +19,12 @@
           icon-git2
         div.computer_wrap
           icon-computer
+          div.telnet_wrap
+            vue-typer(
+              :text='["Hello World!","Привет Мир!","Bonjour le monde!","Hallo Welt!","Здравей, свят!","Hola mundo!","Сайн уу!","Xin chào thế giới!",";)"]'
+              :pre-erase-delay='5000'
+              :type-delay='200'
+            )
 </template>
 
 <script>
