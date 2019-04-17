@@ -1,34 +1,38 @@
-.ivanopol_logo .head
-  animation-name animationLogo
-  animation-duration 30s
-  animation-iteration-count infinite
-  animation-timing-function ease
-  transform-origin center bottom  
+//#############################################
+// Animations
+//############################################
 
-.ivanopol_logo .eye 
-  animation-name blinking
-  animation-duration 4s
-  animation-iteration-count infinite
-  transform-origin 100% 63%
+.ivanopol_logo 
+  .eye 
+    animation-name blinking
+    animation-duration 4s
+    animation-iteration-count infinite
+    transform-origin 100% 63%
+  @media screen and (min-width: 1920px)
+    .head
+      animation-name animationLogo
+      animation-duration 30s
+      animation-iteration-count infinite
+      animation-timing-function ease
+      transform-origin center bottom
 
-.icon_ubuntu
-  animation rotated 50s infinite linear
-
-.background
-  animation animationBackground 10s infinite linear
-
-.icon_git2
-.icon_git
-.icon_github
-  animation animationFramesTwo 10s infinite linear
-
-.icon_vim
-.icon_bitbucket
-.icon_docker
-  animation animationFramesTwo 15s infinite linear
-
-.icon_laravel
-   animation animationFramesOne 35s infinite linear
+#illustration
+  .icon_ubuntu
+    animation rotated 50s infinite linear
+  .icon_vim
+  .icon_bitbucket
+  .icon_docker
+    animation animationFramesTwo 15s infinite linear
+  .icon_laravel
+    animation animationFramesOne 35s infinite linear
+  
+  @media screen and (min-width: 1920px)
+    .background
+      animation animationBackground 10s infinite linear
+    .icon_git2
+    .icon_git
+    .icon_github
+      animation animationFramesTwo 10s infinite linear      
 
 .icon_born
   #Head
@@ -94,3 +98,65 @@
   50% { transform: scaleX(0.97) scaleY(0.98)}
   100% { transform: scaleX(1) scaleY(1)}  
 }
+
+//#############################################
+// Play states
+//############################################
+.logo_wrap.active
+  .ivanopol_logo 
+    .head
+      animation-play-state running
+.logo_wrap
+  .ivanopol_logo 
+    .head
+      animation-play-state paused
+
+#born.active
+  .icon_born 
+    #Head
+      animation-play-state running
+    #Eyes
+      animation-play-state running  
+#born
+  .icon_born 
+    #Head
+      animation-play-state paused
+    #Eyes
+      animation-play-state paused   
+
+#illustration
+  .icon_ubuntu
+  .icon_git2
+  .icon_git
+  .icon_github
+  .background 
+  .icon_vim
+  .icon_bitbucket
+  .icon_docker
+  .icon_laravel
+      animation-play-state paused
+#illustration.active
+  .icon_ubuntu
+  .icon_git2
+  .icon_git
+  .icon_github
+  .background 
+  .icon_vim
+  .icon_bitbucket
+  .icon_docker
+  .icon_laravel
+      animation-play-state running 
+
+//#############################################
+// Delays
+//############################################
+
+.ivanopol_logo 
+  .head
+    animation-delay 3s
+#illustration
+  .background   
+  .icon_git2
+  .icon_bitbucket
+  .icon_vim
+      animation-delay 10s

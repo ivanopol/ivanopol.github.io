@@ -42,7 +42,7 @@
               src="./assets/images/avatar.jpg"
               class="avatar"
             )
-            p.born Родился в 1986 году (33 года) в городе Пермь.
+            p#born Родился в 1986 году (33 года) в городе Пермь.
               icon-born
         div.slide(
           data-name="Образование среднее"
@@ -374,6 +374,15 @@ import AppIllustrationIcon from './components/AppIllustrationIcon.vue'
 export default {
   data () {
     return {
+      animations: {
+        illustration: false,
+        logoMain: false,
+        born: false,
+        logoSecond: false,
+        greeting: 0,
+        history: 0,
+        contacts: 0
+      },
       scrollbar: {
         alwaysShowTracks: true
       },
@@ -396,7 +405,73 @@ export default {
       ]
     }
   },
+  mounted: function () {
+    this.handleScroll()
+    window.addEventListener('scroll', this.handleScroll)
+  },
   methods: {
+    handleScroll () {
+      var windowScrollPixels = (document.body.scrollTop || document.documentElement.scrollTop)
+      var node = document
+      if (this.animations.greeting === 0 && this.animations.history === 0 && this.animations.contacts === 0) {
+        var greetingHeight = node.getElementById('greeting').clientHeight
+        var historyHeight = node.getElementById('history').clientHeight / 3 + greetingHeight
+        var contactsHeight = historyHeight
+        contactsHeight += node.getElementById('experience').clientHeight
+        contactsHeight += node.getElementById('skills').clientHeight
+
+        this.animations.greeting = greetingHeight
+        this.animations.history = historyHeight
+        this.animations.contacts = contactsHeight
+      }
+      if (windowScrollPixels > this.animations.greeting) {
+        if (this.animations.illustration) {
+          this.animations.illustration = false
+          node.getElementById('illustration').removeAttribute('class', 'active')
+        }
+      } else {
+        if (!this.animations.illustration) {
+          this.animations.illustration = true
+          node.getElementById('illustration').setAttribute('class', 'active')
+        }
+      }
+
+      if (windowScrollPixels > this.animations.history || windowScrollPixels < this.animations.greeting) {
+        if (this.animations.born) {
+          this.animations.born = false
+          node.getElementById('born').removeAttribute('class', 'active')
+        }
+      } else {
+        if (!this.animations.born) {
+          this.animations.born = true
+          node.getElementById('born').setAttribute('class', 'active')
+        }
+      }
+
+      if (windowScrollPixels > this.animations.greeting) {
+        if (this.animations.logoMain) {
+          this.animations.logoMain = false
+          node.getElementsByClassName('logo_wrap')[0].setAttribute('class', 'logo_wrap')
+        }
+      } else {
+        if (!this.animations.logoMain) {
+          this.animations.logoMain = true
+          node.getElementsByClassName('logo_wrap')[0].setAttribute('class', 'logo_wrap active')
+        }
+      }
+
+      if (windowScrollPixels < this.animations.contacts) {
+        if (this.animations.logoSecond) {
+          this.animations.logoSecond = false
+          node.getElementsByClassName('logo_wrap')[1].setAttribute('class', 'logo_wrap')
+        }
+      } else {
+        if (!this.animations.logoSecond) {
+          this.animations.logoSecond = true
+          node.getElementsByClassName('logo_wrap')[1].setAttribute('class', 'logo_wrap active')
+        }
+      }
+    },
     setActive (tab) {
       this.tabs.forEach(el => {
         el.active = el === tab

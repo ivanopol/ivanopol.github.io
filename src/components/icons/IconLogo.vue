@@ -1,5 +1,5 @@
 <template lang="pug">
-    svg(xmlns='http://www.w3.org/2000/svg', viewBox='0 0 74.63 74.63')
+    svg(id="logo" class="logo_wrap" xmlns='http://www.w3.org/2000/svg', viewBox='0 0 74.63 74.63')
         title
         g.ivanopol_logo
             path.a(d='M34.33,0h6A34.33,34.33,0,0,1,74.63,34.33v5.53A34.77,34.77,0,0,1,39.86,74.63H34.77A34.77,34.77,0,0,1,0,39.86V34.33A34.33,34.33,0,0,1,34.33,0Z')
