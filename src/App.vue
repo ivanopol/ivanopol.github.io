@@ -1,375 +1,391 @@
 <template lang="pug">
   #app
-    div#greeting.substrate
-      .container
-        div.menu
-          div.logo
-            icon-logo
-          nav
-            a(href="#greeting") Приветствие
-            a(href="#history") История
-            a(href="#experience") Опыт работы
-            a(href="#skills") Навыки
-            a(href="#contacts") Контакты
-        div.block_wrapper
-          div.block.appeal
-            h1 Дмитрий Иванов
-            h2 Backend Developer
-            div.underline
-            p Здравстуйте, меня зовут Дмитрий. Я&nbsp;занимаюсь
-              |  веб-разработкой уже много лет и&nbsp;мне это занятие очень
-              | нравится. Сейчас я&nbsp;ищу работу на&nbsp;позицию
-              | backend-developer или fullstack-developer.
-            a(href="./static/Portfolio_SPA.pdf"
-            class="button"
-            download="resume_ivanov_dmitriy"
-            ) Скачать Резюме
-              span.icon_pdf
-          div.block.illustration
-            app-illustration-icon
-    div#history.siema_wrapper
-      siema(
-        class="siema s"
-        ref="siema"
-        :options="options"
-        @change="change"
-        )
-        div.slide(
-          data-name="Начало"
+    Reveal(
+      right
+    )
+      a(href="#greeting")
+        span Приветствие
+      a(href="#history")
+        span История
+      a(href="#experience")
+        span Опыт работы
+      a(href="#skills")
+        span Навыки
+      a(href="#contacts")
+        span Контакты
+    main#page-wrap
+      div#greeting.substrate
+        .container
+          div.menu
+            div.logo
+              icon-logo
+            nav
+              a(href="#greeting") Приветствие
+              a(href="#history") История
+              a(href="#experience") Опыт работы
+              a(href="#skills") Навыки
+              a(href="#contacts") Контакты
+          div.block_wrapper
+            div.block.appeal
+              h1 Дмитрий Иванов
+              h2 Backend Developer
+              div.underline
+              p Здравстуйте, меня зовут Дмитрий. Я&nbsp;занимаюсь
+                |  веб-разработкой уже много лет и&nbsp;мне это занятие очень
+                | нравится. Сейчас я&nbsp;ищу работу на&nbsp;позицию
+                | backend-developer или fullstack-developer.
+              div.button_wrapper
+                a(href="./static/Portfolio_SPA.pdf"
+                class="button"
+                download="resume_ivanov_dmitriy"
+                ) Скачать Резюме
+                  span.icon_pdf
+            div.block.illustration
+              app-illustration-icon
+      div#history.siema_wrapper
+        siema(
+          class="siema s"
+          ref="siema"
+          :options="options"
+          @change="change"
           )
-          div.content_wrapper
-            img(
-              src="./assets/images/avatar.jpg"
-              class="avatar"
+          div.slide(
+            data-name="Начало"
             )
-            p#born Родился в 1986 году (33 года) в городе Пермь.
-              icon-born
-        div.slide(
-          data-name="Образование среднее"
-          )
-          div.content_wrapper
-            div.img_wrapper
+            div.content_wrapper
               img(
-                src="./assets/images/pgti.jpg"
-                class="pgti_img"
+                src="./assets/images/avatar.jpg"
+                class="avatar"
               )
-            p.pgti Закончил ПГТИ 2003 &mdash; 2006 года.
-                  br
-                  strong Специализация:
-                  br
-                  |  Программное обеспечение вычислительной
-                  |  техники и автоматизированных систем.
-                  div.button_wrapper
-                    a(href="#"
-                    class="button"
-                    ) Посмотреть диплом
-                      span.icon_zoom
-        div.slide(
-          data-name="Образование высшее"
-          )
-          div.content_wrapper
-            div.img_wrapper
-              img(
-                src="./assets/images/pnipu.png"
-                class="pnipu_img"
-              )
-            p.pnipu Закончил ПНИПУ (ПГТУ) 2006 &mdash; 2010 года.
-                  br
-                  strong Специализация:
-                  br
-                  |  Автоматизированные системы обработки
-                  |  информации и управления (АСУ).
-                  div.button_wrapper
-                    a(href="#"
-                    class="button"
-                    ) Посмотреть диплом
-                      span.icon_zoom
-      div(
-        class="arrow arrow_left"
-        @click="$refs.siema.prev()"
-        v-if="arrowLeft !== ''"
-      )
-        span {{arrowLeft}}
-      div(
-        class="arrow arrow_right"
-        @click="$refs.siema.next()"
-        v-if="arrowRight !== ''"
-      )
-        span {{arrowRight}}
-    div#experience.substrate
-      div.title Опыт работы
-      div.container
-        div.timeline_block
-          span.date 2006 &mdash; 2011
-          | Разработка логотипов, веб-дизайна и сайтов.
-          | Свой первый интернет-магазин рыболовных товаров.
-        div.timeline_block
-          span.date 2011 &mdash; 2012
-          span.company Тенториум
-          span.position Администратор сайтов в компании
-          | Администрировал и дорабатывал сайты:
-          br
-          | 1)&nbsp;
-          a(
-            href="https://tentorium.ru"
-            target="_blank"
+              p#born Родился в 1986 году (33 года) в городе Пермь.
+                icon-born
+          div.slide(
+            data-name="Образование среднее"
+            )
+            div.content_wrapper
+              div.img_wrapper
+                img(
+                  src="./assets/images/pgti.jpg"
+                  class="pgti_img"
+                )
+              p.pgti Закончил ПГТИ 2003 &mdash; 2006 года.
+                    br
+                    strong Специализация:
+                    br
+                    |  Программное обеспечение вычислительной
+                    |  техники и автоматизированных систем.
+                    div.button_wrapper
+                      a(href="#"
+                      class="button"
+                      ) Посмотреть диплом
+                        span.icon_zoom
+          div.slide(
+            data-name="Образование высшее"
+            )
+            div.content_wrapper
+              div.img_wrapper
+                img(
+                  src="./assets/images/pnipu.png"
+                  class="pnipu_img"
+                )
+              p.pnipu Закончил ПНИПУ (ПГТУ) 2006 &mdash; 2010 года.
+                    br
+                    strong Специализация:
+                    br
+                    |  Автоматизированные системы обработки
+                    |  информации и управления (АСУ).
+                    div.button_wrapper
+                      a(href="#"
+                      class="button"
+                      ) Посмотреть диплом
+                        span.icon_zoom
+        div(
+          class="arrow arrow_left"
+          @click="$refs.siema.prev()"
+          v-if="arrowLeft !== ''"
+        )
+          span {{arrowLeft}}
+        div(
+          class="arrow arrow_right"
+          @click="$refs.siema.next()"
+          v-if="arrowRight !== ''"
+        )
+          span {{arrowRight}}
+      div#experience.substrate
+        div.title Опыт работы
+        div.container
+          div.timeline_block
+            span.date 2006 &mdash; 2011
+            | Разработка логотипов, веб-дизайна и сайтов.
+            | Свой первый интернет-магазин рыболовных товаров.
+          div.timeline_block
+            span.date 2011 &mdash; 2012
+            span.company Тенториум
+            span.position Администратор сайтов в компании
+            | Администрировал и дорабатывал сайты:
+            br
+            | 1)&nbsp;
+            a(
+              href="https://tentorium.ru"
+              target="_blank"
+                rel="nofollow"
+            ) tentorium.ru
+            |  (1C Битрикс);
+            br
+            | 2)&nbsp;
+            span(
+              class="no_site"
+              title="Сайт уже не работает"
+            ) save-bee.ru (1C Битрикс);
+            br
+            | 3) Внутренний корпоративный портал компании (1C Битрикс);
+            br
+            | 4)&nbsp;
+            a(
+              href="http://apispa.ru"
+              target="_blank"
               rel="nofollow"
-          ) tentorium.ru
-          |  (1C Битрикс);
-          br
-          | 2)&nbsp;
-          span(
-            class="no_site"
-            title="Сайт уже не работает"
-          ) save-bee.ru (1C Битрикс);
-          br
-          | 3) Внутренний корпоративный портал компании (1C Битрикс);
-          br
-          | 4)&nbsp;
-          a(
-            href="http://apispa.ru"
-            target="_blank"
-            rel="nofollow"
-          ) apispa.ru.
-          br
-          | Также, занимался: разработкой электронного документооборота
-          | компании (разработка архитектуры&nbsp;БД, программирование под CMS Bitrix),
-          | разработкой модуля личного кабинета для tentorium.ru (отчёты, диаграммы,
-          | одноразовые ссылки на&nbsp;документы т.д.), написанием &laquo;гаджетов&raquo;
-          | для корпоративного портала, разработкой электронных конкурсов и&nbsp;тестов
-          | для корпоративного портала (на&nbsp;JQuery + MySQL) размещением информации
-          | и&nbsp;аккаунтов в&nbsp;социальных сетях.
-        div.timeline_block
-          span.date 2013
-          span.company Federal Finance
-          span.position PHP программист
-          | Работа с Zend Framework над системой сбора
-          | заявок на кредиты в банки. Вёрстка.
-        div.timeline_block
-          span.date 2014
-          span.company Студия &laquo;Помидор&raquo;
-          span.position PHP программист
-          | Разработка сайтов на&nbsp;Drupal, Yii. Верстка,
-          | программирование. Архитектура&nbsp;БД.
-        div.timeline_block
-          span.date 2014 &mdash; 2017
-          span.company WBMS interactive
-          span.position SEO-оптимизатор, веб-программист
-          | Продвижение сайтов, работа над отдельными сайтами
-          | (верстка, программирование), создание лендингов. В&nbsp;основном на&nbsp;MODx.
-        div.timeline_block
-          span.date 2017
-          span.company &laquo;Модерн&raquo;
-          span.position Программист-верстальщик
-          | Адаптивная вёрстка, JS, немного back-end'а.
-        div.timeline_block
-          span.date 2014 &mdash; 2019
-          span.company АН &laquo;Новые дома&raquo;
-          span.position Разработчик и администратор сайта
-          | Создание, развитие, поддержка и администрирование сайта.
-    div#skills
-      div.container
-        div.title Навыки
-        div.tabs
-          ul
-            li(
-              v-for="tab in tabs"
-              :class="{'is-active': tab.active}"
-            )
-              a(@click="setActive(tab)") {{tab.caption}}
-        div(
-          class="skills"
-          v-if="tabs[0].active === true"
-        )
-          div.skills_block
-            div.skills_title Языки
-            div.skills_inner
-              div.skills_row
-                div.skills_row_name PHP 5-7
-                div.skills_row_value
-                  div.skills_row_value_100.skills_row_value_up
-              div.skills_row
-                div.skills_row_name Python
-                div.skills_row_value
-                  div.skills_row_value_10.skills_row_value_up
-          div.skills_block
-            div.skills_title Фреймворки и CMS
-            div.skills_inner
-              div.skills_row
-                div.skills_row_name MODx
-                div.skills_row_value
-                  div.skills_row_value_100.skills_row_value_down
-              div.skills_row
-                div.skills_row_name Laravel
-                div.skills_row_value
-                  div.skills_row_value_50.skills_row_value_up
-              div.skills_row
-                div.skills_row_name Yii
-                div.skills_row_value
-                  div.skills_row_value_50.skills_row_value_down
-              div.skills_row
-                div.skills_row_name Drupal
-                div.skills_row_value
-                  div.skills_row_value_25.skills_row_value_down
-              div.skills_row
-                div.skills_row_name 1C Битрикс
-                div.skills_row_value
-                  div.skills_row_value_10.skills_row_value_down
-        div(
-          class="skills"
-          v-if="tabs[1].active === true"
-        )
-          div.skills_block
-            div.skills_title Языки
-            div.skills_inner
-              div.skills_row
-                div.skills_row_name Javascript
-                div.skills_row_value
-                  div.skills_row_value_50.skills_row_value_up
-          div.skills_block
-            div.skills_title Фреймворки
-            div.skills_inner
-              div.skills_row
-                div.skills_row_name JQuery
-                div.skills_row_value
-                  div.skills_row_value_100.skills_row_value_down
-              div.skills_row
-                div.skills_row_name VueJS
-                div.skills_row_value
-                  div.skills_row_value_10.skills_row_value_up
-              div.skills_row
-                div.skills_row_name React
-                div.skills_row_value
-                  div.skills_row_value_10.skills_row_value_up
-          div.skills_block
-            div.skills_title Вёрстка
-            div.skills_inner
-              div.skills_row
-                div.skills_row_name CSS, SCSS, Stylus
-                div.skills_row_value
-                  div.skills_row_value_100.skills_row_value_up
-              div.skills_row
-                div.skills_row_name Photoshop, Ai
-                div.skills_row_value
-                  div.skills_row_value_100.skills_row_value_up
-        div.skills_other
-          div.skills_other_block
-            div.skills_other_title Окружение
-            div.skills_other_list Linux (Ubuntu, Debian, Arch, Deepin, Solus)
-            div.skills_other_list Docker, Vagrant, XAMPP, Ubuntu server на VirtualBox
-            div.skills_other_list Git, Github, Bitbucket
-            div.skills_other_list Composer, Webpack & Gulp
-          div.skills_other_block
-            div.skills_other_title БД
-            div.skills_other_list MySQL
-            div.skills_other_title Есть понимание
-            div.skills_other_list ООП, PSR, SOLID, KISS
-    div#books.substrate
-      div.title Последние прочитанные книги
-      div.books_wrapper
-        smooth-scrollbar(
-          :options="{alwaysShowTracks: true}"
-        )
-          ul
+            ) apispa.ru.
+            br
+            | Также, занимался: разработкой электронного документооборота
+            | компании (разработка архитектуры&nbsp;БД, программирование под CMS Bitrix),
+            | разработкой модуля личного кабинета для tentorium.ru (отчёты, диаграммы,
+            | одноразовые ссылки на&nbsp;документы т.д.), написанием &laquo;гаджетов&raquo;
+            | для корпоративного портала, разработкой электронных конкурсов и&nbsp;тестов
+            | для корпоративного портала (на&nbsp;JQuery + MySQL) размещением информации
+            | и&nbsp;аккаунтов в&nbsp;социальных сетях.
+          div.timeline_block
+            span.date 2013
+            span.company Federal Finance
+            span.position PHP программист
+            | Работа с Zend Framework над системой сбора
+            | заявок на кредиты в банки. Вёрстка.
+          div.timeline_block
+            span.date 2014
+            span.company Студия &laquo;Помидор&raquo;
+            span.position PHP программист
+            | Разработка сайтов на&nbsp;Drupal, Yii. Верстка,
+            | программирование. Архитектура&nbsp;БД.
+          div.timeline_block
+            span.date 2014 &mdash; 2017
+            span.company WBMS interactive
+            span.position SEO-оптимизатор, веб-программист
+            | Продвижение сайтов, работа над отдельными сайтами
+            | (верстка, программирование), создание лендингов. В&nbsp;основном на&nbsp;MODx.
+          div.timeline_block
+            span.date 2017
+            span.company &laquo;Модерн&raquo;
+            span.position Программист-верстальщик
+            | Адаптивная вёрстка, JS, немного back-end'а.
+          div.timeline_block
+            span.date 2014 &mdash; 2019
+            span.company АН &laquo;Новые дома&raquo;
+            span.position Разработчик и администратор сайта
+            | Создание, развитие, поддержка и администрирование сайта.
+      div#skills
+        div.container
+          div.title Навыки
+          div.tabs
+            ul
+              li(
+                v-for="tab in tabs"
+                :class="{'is-active': tab.active}"
+              )
+                a(@click="setActive(tab)") {{tab.caption}}
+          div(
+            class="skills"
+            v-if="tabs[0].active === true"
+          )
+            div.skills_block
+              div.skills_title Языки
+              div.skills_inner
+                div.skills_row
+                  div.skills_row_name PHP 5-7
+                  div.skills_row_value
+                    div.skills_row_value_100.skills_row_value_up
+                div.skills_row
+                  div.skills_row_name Python
+                  div.skills_row_value
+                    div.skills_row_value_10.skills_row_value_up
+            div.skills_block
+              div.skills_title Фреймворки и CMS
+              div.skills_inner
+                div.skills_row
+                  div.skills_row_name MODx
+                  div.skills_row_value
+                    div.skills_row_value_100.skills_row_value_down
+                div.skills_row
+                  div.skills_row_name Laravel
+                  div.skills_row_value
+                    div.skills_row_value_50.skills_row_value_up
+                div.skills_row
+                  div.skills_row_name Yii
+                  div.skills_row_value
+                    div.skills_row_value_50.skills_row_value_down
+                div.skills_row
+                  div.skills_row_name Drupal
+                  div.skills_row_value
+                    div.skills_row_value_25.skills_row_value_down
+                div.skills_row
+                  div.skills_row_name 1C Битрикс
+                  div.skills_row_value
+                    div.skills_row_value_10.skills_row_value_down
+          div(
+            class="skills"
+            v-if="tabs[1].active === true"
+          )
+            div.skills_block
+              div.skills_title Языки
+              div.skills_inner
+                div.skills_row
+                  div.skills_row_name Javascript
+                  div.skills_row_value
+                    div.skills_row_value_50.skills_row_value_up
+            div.skills_block
+              div.skills_title Фреймворки
+              div.skills_inner
+                div.skills_row
+                  div.skills_row_name JQuery
+                  div.skills_row_value
+                    div.skills_row_value_100.skills_row_value_down
+                div.skills_row
+                  div.skills_row_name VueJS
+                  div.skills_row_value
+                    div.skills_row_value_10.skills_row_value_up
+                div.skills_row
+                  div.skills_row_name React
+                  div.skills_row_value
+                    div.skills_row_value_10.skills_row_value_up
+            div.skills_block
+              div.skills_title Вёрстка
+              div.skills_inner
+                div.skills_row
+                  div.skills_row_name CSS, SCSS, Stylus
+                  div.skills_row_value
+                    div.skills_row_value_100.skills_row_value_up
+                div.skills_row
+                  div.skills_row_name Photoshop, Ai
+                  div.skills_row_value
+                    div.skills_row_value_100.skills_row_value_up
+          div.skills_other
+            div.skills_other_block
+              div.skills_other_title Окружение
+              div.skills_other_list Linux (Ubuntu, Debian, Arch, Deepin, Solus)
+              div.skills_other_list Docker, Vagrant, XAMPP, Ubuntu server на VirtualBox
+              div.skills_other_list Git, Github, Bitbucket
+              div.skills_other_list Composer, Webpack & Gulp
+            div.skills_other_block
+              div.skills_other_title БД
+              div.skills_other_list MySQL
+              div.skills_other_title Есть понимание
+              div.skills_other_list ООП, PSR, SOLID, KISS
+      div#books.substrate
+        div.title Последние прочитанные книги
+        div.books_wrapper
+          smooth-scrollbar(
+            :options="{alwaysShowTracks: true}"
+          )
+            ul
+              li
+                a(
+                href="https://www.ozon.ru/context/detail/id/139411597"
+                target="_blank"
+                )
+                  img(
+                  src="./assets/images/books/using_docker.jpg"
+                  )
+              li
+                a(
+                href="https://www.amazon.com/Design-Patterns-Laravel-Kelt-Dockins/dp/1484224507"
+                target="_blank"
+                )
+                  img(
+                  src="./assets/images/books/design_patterns_in_php_and_laravel.jpg"
+                  )
+              li
+                a(
+                href="https://www.ozon.ru/context/detail/id/140376487/"
+                target="_blank"
+                )
+                  img(
+                  src="./assets/images/books/djedaiskie_tehniki.jpg"
+                  )
+              li
+                a(
+                href="https://www.ozon.ru/context/detail/id/28336354/"
+                target="_blank"
+                )
+                  img(
+                  src="./assets/images/books/chistiy_kod.jpg"
+                  )
+              li
+                a(
+                href="https://www.ozon.ru/context/detail/id/144233005/"
+                target="_blank"
+                )
+                  img(
+                  src="./assets/images/books/patterny_proektirovania.jpg"
+                  )
+              li
+                a(
+                href="https://www.ozon.ru/context/detail/id/148737571/"
+                target="_blank"
+                )
+                  img(
+                  src="./assets/images/books/php_objecty_shablony_i_metodiki.jpg"
+                  )
+      #contacts
+        div.title Контакты
+        div.appeal_wrapper
+          div.message Заинтересованы в сотрудничестве?
+                    br
+                    |  Вы можете отправить мне сообщение
+                    |  или написать в социальных сетях.
+                    div.extended_logo
+                      icon-logo
+        form
+          textarea
+          input(
+            type="submit"
+            class="button"
+            value="Отправить"
+          )
+        footer
+          ul.contacts
             li
               a(
-              href="https://www.ozon.ru/context/detail/id/139411597"
-              target="_blank"
+                href="https://moikrug.ru/ivanopol"
+                class="moi_krug"
+                target="_blank"
               )
                 img(
-                src="./assets/images/books/using_docker.jpg"
+                  src="./assets/svg/contacts/moi_krug.svg"
                 )
             li
               a(
-              href="https://www.amazon.com/Design-Patterns-Laravel-Kelt-Dockins/dp/1484224507"
-              target="_blank"
+                href="https://github.com/ivanopol"
+                class="github"
+                target="_blank"
               )
                 img(
-                src="./assets/images/books/design_patterns_in_php_and_laravel.jpg"
+                  src="./assets/svg/contacts/github.svg"
                 )
             li
               a(
-              href="https://www.ozon.ru/context/detail/id/140376487/"
-              target="_blank"
+                href="https://www.linkedin.com/in/ivanopol"
+                class="linkedin"
+                target="_blank"
               )
                 img(
-                src="./assets/images/books/djedaiskie_tehniki.jpg"
+                  src="./assets/svg/contacts/linkedin.svg"
                 )
-            li
-              a(
-              href="https://www.ozon.ru/context/detail/id/28336354/"
-              target="_blank"
-              )
-                img(
-                src="./assets/images/books/chistiy_kod.jpg"
-                )
-            li
-              a(
-              href="https://www.ozon.ru/context/detail/id/144233005/"
-              target="_blank"
-              )
-                img(
-                src="./assets/images/books/patterny_proektirovania.jpg"
-                )
-            li
-              a(
-              href="https://www.ozon.ru/context/detail/id/148737571/"
-              target="_blank"
-              )
-                img(
-                src="./assets/images/books/php_objecty_shablony_i_metodiki.jpg"
-                )
-    #contacts
-      div.title Контакты
-      div.appeal_wrapper
-        div.message Заинтересованы в сотрудничестве?
-                  br
-                  |  Вы можете отправить мне сообщение
-                  |  или написать в социальных сетях.
-                  div.extended_logo
-                    icon-logo
-      form
-        textarea
-        input(
-          type="submit"
-          class="button"
-          value="Отправить"
-        )
-      footer
-        ul.contacts
-          li
-            a(
-              href="https://moikrug.ru/ivanopol"
-              class="moi_krug"
-              target="_blank"
-            )
-              img(
-                src="./assets/svg/contacts/moi_krug.svg"
-              )
-          li
-            a(
-              href="https://github.com/ivanopol"
-              class="github"
-              target="_blank"
-            )
-              img(
-                src="./assets/svg/contacts/github.svg"
-              )
-          li
-            a(
-              href="https://www.linkedin.com/in/ivanopol"
-              class="linkedin"
-              target="_blank"
-            )
-              img(
-                src="./assets/svg/contacts/linkedin.svg"
-              )
 </template>
 
 <script>
 import IconLogo from './components/icons/IconLogo.vue'
 import IconBorn from './components/icons/IconBorn.vue'
 import AppIllustrationIcon from './components/AppIllustrationIcon.vue'
+import { Reveal } from 'vue-burger-menu'
 
 export default {
   data () {
@@ -420,7 +436,7 @@ export default {
         contactsHeight += node.getElementById('experience').clientHeight
         contactsHeight += node.getElementById('skills').clientHeight
 
-        this.animations.greeting = greetingHeight
+        this.animations.greeting = greetingHeight - (greetingHeight * 25 / 100)
         this.animations.history = historyHeight
         this.animations.contacts = contactsHeight
       }
@@ -504,7 +520,8 @@ export default {
   components: {
     IconLogo,
     IconBorn,
-    AppIllustrationIcon
+    AppIllustrationIcon,
+    Reveal
   }
 }
 </script>
