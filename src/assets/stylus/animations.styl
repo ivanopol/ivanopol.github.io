@@ -32,8 +32,13 @@
     .icon_git2
     .icon_git
     .icon_github
-      animation animationFramesTwo 10s infinite linear      
-
+      animation animationFramesTwo 10s infinite linear  
+  @media screen and (max-width: 768px)
+    .icon_vim
+    .icon_bitbucket
+    .icon_docker    
+    .icon_github 
+      animation animationFramesTwoMobile 15s infinite linear    
 .icon_born
   #Head
     animation animationBornAlarm 10s ease infinite 
@@ -124,6 +129,14 @@
   100% { transform: scaleX(1) scaleY(1)}  
 }
 
+@keyframes animationFramesTwoMobile {
+  0% { transform: translate(0px,0px) rotate(0)}
+  30% { transform: translate(20px,-5px) rotate(10deg) }
+  70% { transform: translate(10px,15px) rotate(5deg) }
+  100% { transform: translate(0px,0px) rotate(0) }  
+}
+
+
 //#############################################
 // Play states
 //############################################
@@ -185,3 +198,10 @@
   .icon_bitbucket
   .icon_vim
       animation-delay 10s
+@media screen and (max-width: 768px)  
+  #illustration    
+    .icon_bitbucket 
+      animation-delay 1s
+    .icon_github      
+    .icon_vim
+      animation-delay 2s
