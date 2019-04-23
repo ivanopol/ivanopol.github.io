@@ -1,6 +1,16 @@
 @media screen and (max-width : 768px)
+  underline()
+    content ""
+    display block
+    background-color blue
+    width 90px
+    max-width 90px
+    height 4px
+    max-height 4px
+    border-radius 20px
+    margin 10px auto 0  
   #greeting
-    padding 0
+    padding 0 0 6.666vw 0
   .container
     padding 0
     .block_wrapper
@@ -108,11 +118,63 @@
       .icon_git2
       #background
         display none
-
-  #history
-  #experience
   #skills
   #books
   #contacts
     display none
-  
+
+  #history
+    .slide
+      height 178.1333vw
+      .content_wrapper
+        width 70.666vw
+        .img_wrapper
+          height 61.333vw
+        img 
+          &.pgti_img
+            max-width 27.2vw
+            width 27.2vw
+          &.pnipu_img
+            max-width 56vw
+            width 34.666vw        
+          &.avatar
+            width 48vw
+            height 48vw
+            border 1.8666vw solid select
+            border-top-width 1.6vw
+            border-right-width 2.9333vw
+            border-bottom-width 2.9333vw
+            margin 0 auto 12vw
+        p
+          font-size 3.7333vw
+          line-height 4.8vw
+          .icon_born
+            width 4.2666vw
+            height 10.1333vw
+            left -6.666vw
+            top -2.666vw
+          &#born:after
+            underline() 
+          &.pgti
+          &.pnipu
+            margin-bottom 13vw            
+          &.pgti:before
+          &.pnipu:before  
+            width 8.5333vw       
+            height 4.8vw
+            left -10.1333vw
+  .siema_wrapper
+    .button_wrapper
+      display none
+    .arrow
+      width 14.666vw
+      height 14.666vw
+      top 78%
+      span
+        font-size 3.2vw
+        line-height: 3.7333vw
+        top 17.333vw
+    .arrow_left
+      left 25.8666vw
+    .arrow_right
+      right 25.8666vw
