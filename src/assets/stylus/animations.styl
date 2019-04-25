@@ -52,6 +52,10 @@
 
   #Eyes
     animation animationBornBlinking 4s infinite linear
+#books
+  .title:hover
+    &:after
+      animation animationNoAction 0.4s ease-out 1
 
 @keyframes animationBornBlinking {
   0% { opacity:1 }
@@ -59,6 +63,13 @@
   20% { opacity:0 }
   22% { opacity:1 }
   100% { opacity:1 }  
+}
+
+@keyframes animationNoAction {
+  0% { left: 0 }
+  33% { left: -10px }
+  66% { left: 10px }
+  100% { left:0 }  
 }
 
 @keyframes animationBornAlarm {

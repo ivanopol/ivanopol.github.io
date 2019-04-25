@@ -2,10 +2,11 @@
   padding-bottom 7.65625vw
   .books_wrapper
     max-width 1298px
-    max-height 600px
+    max-height 625px
     width 67.604vw
-    height 31.25vw
+    height 32.552vw
     margin 0 auto
+    padding-bottom 1.302vw
     ul 
       overflow-x: auto
       overflow-y: hidden
@@ -56,3 +57,27 @@
             -o-transition all .3s ease
             transition all .3s ease
             user-select none
+    .scrollbar-thumb
+      position relative
+      &:after
+        content ""
+        display block
+        width 5px
+        height 1px
+        position absolute
+        left 50% 
+        top 0px
+        background-color transparent
+        border 0 solid #6558a0
+        border-radius 15px
+        transition all .2s ease-in
+  @media screen and (min-width: 768px)
+    .books_wrapper:hover
+      .scrollbar-thumb
+        &:after
+          width 30px
+          height 30px
+          left calc(50% - 15px)
+          top -11px
+          border 7px solid #6558a0
+          background-color white!important
