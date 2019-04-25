@@ -199,34 +199,48 @@
             div.skills_block
               div.skills_title Языки
               div.skills_inner
-                div.skills_row
+                div.skills_row(
+                    title="На данный момент в языке PHP я чувствую себя уверенно, могу решать задачи различной сложности. Собираюсь и дальше в нём разбираться"
+                  )
                   div.skills_row_name PHP 5-7
                   div.skills_row_value
                     div.skills_row_value_100.skills_row_value_up
-                div.skills_row
+                div.skills_row(
+                      title="В языке Python я начал разбираться недавно. Мне интересны его возможности и гибкость. Хотелось бы улучшить свои навыки работы с этим языком"
+                  )
                   div.skills_row_name Python
                   div.skills_row_value
                     div.skills_row_value_10.skills_row_value_up
             div.skills_block
               div.skills_title Фреймворки и CMS
               div.skills_inner
-                div.skills_row
+                div.skills_row(
+                      title="Я много работал с MODx, чувствую себя в нём уверенно и могу решать многие задачи. Однако, эта CMS развивается недостаточно интенсивно и, по возможности, я бы не хотел работать с ним больше"
+                  )
                   div.skills_row_name MODx
                   div.skills_row_value
                     div.skills_row_value_100.skills_row_value_down
-                div.skills_row
+                div.skills_row(
+                      title="Мне нравится Laravel. На данный момент у меня мало практических навыков работы с ним. Я читал много статей, документацию, проходил курсы Дмитрий Елисеева по Laravel. В дальнейшем собираюсь работать с этим фреймворком или его аналогами"
+                  )
                   div.skills_row_name Laravel
                   div.skills_row_value
                     div.skills_row_value_50.skills_row_value_up
-                div.skills_row
+                div.skills_row(
+                      title="С фреймворком Yii мне довелось поработать около года. В то время он мне очень нравился, но на данный момент я считаю, что этот фреймворк уходит в прошлое и стоит сосредоточиться на работе с Laravel. По возможности, я бы не хотел работать с данным фреймворком в будущем"
+                  )
                   div.skills_row_name Yii
                   div.skills_row_value
                     div.skills_row_value_50.skills_row_value_down
-                div.skills_row
+                div.skills_row(
+                      title="Я делал несколько сайтов на CMS Drupal. На мой взгляд это очень интересная и прогрессивная CMS. Опыта работы с ним у меня не очень много. Я бы не хотел использовать в работе эту CMS в дальнейшем"
+                  )
                   div.skills_row_name Drupal
                   div.skills_row_value
                     div.skills_row_value_25.skills_row_value_down
-                div.skills_row
+                div.skills_row(
+                      title="Мне довелось работать с 1С Битрикс при первом трудоустройстве в качестве программиста. Это было не легко и данная система, честно говоря, мне не по душе. Уже мало чего помню. По возможности, не хотелось бы работать с ней"
+                  )
                   div.skills_row_name 1C Битрикс
                   div.skills_row_value
                     div.skills_row_value_10.skills_row_value_down
@@ -237,40 +251,57 @@
             div.skills_block
               div.skills_title Языки
               div.skills_inner
-                div.skills_row
+                div.skills_row(
+                      title="С языка Javascript я начал заниматься программированием. Однако, быстро перешёл на фреймворк JQuery и использовать нативный JS мне приходилось не часто. Я бы хотел улучшить свои навыки в работе с этим языком"
+                  )
                   div.skills_row_name Javascript
                   div.skills_row_value
                     div.skills_row_value_50.skills_row_value_up
             div.skills_block
               div.skills_title Фреймворки
               div.skills_inner
-                div.skills_row
+                div.skills_row(
+                      title="Очень простой и понятный фреймворк. В нём я чувствую себя уверено и могу решать различные задачи без затруднений. Но, кажется, ему на смену уже пришли более современные фреймворки и придётся от него отказываться"
+                  )
                   div.skills_row_name JQuery
                   div.skills_row_value
                     div.skills_row_value_100.skills_row_value_down
-                div.skills_row
+                div.skills_row(
+                      title="Этот сайт сделан на VueJS. Мне он пришёлся по душе. Я хочу больше использовать его в работе и разбираться его возможностями"
+                  )
                   div.skills_row_name VueJS
                   div.skills_row_value
-                    div.skills_row_value_10.skills_row_value_up
-                div.skills_row
+                    div.skills_row_value_25.skills_row_value_up
+                div.skills_row(
+                      title="Довелось немного использовать React на одном из проектов. Также как и VueJS он очень привлекает своими возможностями и мне бы хотелось разобраться с ним"
+                  )
                   div.skills_row_name React
                   div.skills_row_value
                     div.skills_row_value_10.skills_row_value_up
             div.skills_block
               div.skills_title Вёрстка
               div.skills_inner
-                div.skills_row
+                div.skills_row(
+                      title="Я много занимался вёрсткой. Начинал со статичной табличной вёрстки. Затем была блочная, адаптивная, отзывчивая и т.д.. Есть опыт работы программистом-верстальщиком. Чувствую себя достаточно комфортно в вёрстке и в дальнейшем буду развиватсья в этом направлении"
+                  )
                   div.skills_row_name CSS, SCSS, Stylus
                   div.skills_row_value
                     div.skills_row_value_100.skills_row_value_up
-                div.skills_row
+                div.skills_row(
+                      title="До программирование и паралельно с ним я занимался веб-дизайном, рисовал, анимировал, делал 3D. Поэтому, я довольно комфортно себя чувствую с такими инструментами как Photoshop, Illustrator и их аналоги"
+                  )
                   div.skills_row_name Photoshop, Ai
                   div.skills_row_value
                     div.skills_row_value_100.skills_row_value_up
           div.skills_other
             div.skills_other_block
               div.skills_other_title Окружение
-              div.skills_other_list Linux (Ubuntu, Debian, Arch, Deepin, Solus)
+              div.skills_other_list
+                span(
+                  class="tooltip"
+                  title="Около 6 лет я пользуюсь ОС Linux. Более 4-х лет использую разные виды ОС как основую и единственную систему на всех компьютерах. В командной строке чувствую себя уверенно, но есть ещё чему учиться"
+                ) Linux
+                |  (Ubuntu, Debian, Arch, Deepin, Solus)
               div.skills_other_list Docker, Vagrant, XAMPP, Ubuntu server на VirtualBox
               div.skills_other_list Git, Github, Bitbucket
               div.skills_other_list Composer, Webpack & Gulp

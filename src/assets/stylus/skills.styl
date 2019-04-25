@@ -37,56 +37,62 @@
           font-weight bold
           margin-bottom 1.5625vw
         .skills_inner
-            .skills_row
-              border-radius 5.208333333vw
-              margin-bottom 0.677vw
-              padding 0 0 0 1.666vw
-              background-color bg
-              overflow hidden
-              .skills_row_name
-                width 10.2083vw
-                font-weight normal
-                line-height 3.125vw
-                display inline-block
-                vertical-align middle
-              .skills_row_value
-                width 37.3958vw
-                height 3.125vw
-                display inline-block
-                vertical-align middle
+          .skills_row
+            border-radius 5.208333333vw
+            margin-bottom 0.677vw
+            padding 0 0 0 1.666vw
+            background-color bg
+            overflow hidden
+            cursor help
+            &:hover
+            &:active
+              .skills_row_value>div
+                filter brightness(108%)
+            .skills_row_name
+              width 10.2083vw
+              font-weight normal
+              line-height 3.125vw
+              display inline-block
+              vertical-align middle
+            .skills_row_value
+              width 37.3958vw
+              height 3.125vw
+              display inline-block
+              vertical-align middle
+              position relative
+              &>div
+                height 100%
                 position relative
-                &>div
-                  height 100%
-                  position relative
-                  &.skills_row_value_up:after
-                  &.skills_row_value_down:after
-                    width 1.7708vw
-                    height 1.979vw
-                    display block
-                    top calc(50% - 0.98958vw)
-                    right -2.60416vw
-                    position absolute
-                  &.skills_row_value_100.skills_row_value_up:after
-                  &.skills_row_value_100.skills_row_value_down:after
-                    right 1.0416vw
-                  &.skills_row_value_up:after
-                    content ""
-                    background url('./assets/icons/skills_up.svg') no-repeat left center
-                  &.skills_row_value_down:after
-                    content ""
-                    background url('./assets/icons/skills_down.svg') no-repeat left center
-                .skills_row_value_10
-                  background-color red
-                  width 10%
-                .skills_row_value_25
-                  background-color orange
-                  width 25%
-                .skills_row_value_50
-                  background-color yellow
-                  width 50%
-                .skills_row_value_100
-                  background-color green
-                  width 100%
+                transition all 0.3s linear
+                &.skills_row_value_up:after
+                &.skills_row_value_down:after
+                  width 1.7708vw
+                  height 1.979vw
+                  display block
+                  top calc(50% - 0.98958vw)
+                  right -2.60416vw
+                  position absolute
+                &.skills_row_value_100.skills_row_value_up:after
+                &.skills_row_value_100.skills_row_value_down:after
+                  right 1.0416vw
+                &.skills_row_value_up:after
+                  content ""
+                  background url('./assets/icons/skills_up.svg') no-repeat left center
+                &.skills_row_value_down:after
+                  content ""
+                  background url('./assets/icons/skills_down.svg') no-repeat left center
+              .skills_row_value_10
+                background-color red
+                width 10%
+              .skills_row_value_25
+                background-color orange
+                width 25%
+              .skills_row_value_50
+                background-color yellow
+                width 50%
+              .skills_row_value_100
+                background-color green
+                width 100%
   .skills_other
       width 49.27083vw
       margin 0 auto  
