@@ -374,8 +374,13 @@
                     |  или написать в социальных сетях.
                     div.extended_logo
                       icon-logo
-        form
-          textarea
+        form(
+          action="https://formspree.io/ivanopol777@mail.ru"
+          method="POST"
+        )
+          textarea(
+            name="text"
+          )
           input(
             type="submit"
             class="button"
