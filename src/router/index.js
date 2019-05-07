@@ -12,5 +12,6 @@ Vue.use(SmoothScrollbar)
 Vue.use(VueTyper)
 
 export default new Router({
-  routes: []
+  routes: [],
+  mode: 'history'
 })
