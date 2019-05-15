@@ -377,9 +377,18 @@
         form(
           action="https://formspree.io/ivanopol777@mail.ru"
           method="POST"
+          @submit.prevent="onSubmit"
         )
+          span.typing_wrap
+            span(
+              class="typing"
+              v-show="form.active === true"
+            ) Печатает...
           textarea(
-            name="text"
+            id="message"
+            name="message"
+            v-model.trim="form.message"
+            @input="onTyping()"
           )
           input(
             type="submit"
@@ -426,6 +435,10 @@ import { Reveal } from 'vue-burger-menu'
 export default {
   data () {
     return {
+      form: {
+        message: '',
+        active: false
+      },
       animations: {
         illustration: false,
         logoMain: false,
@@ -462,6 +475,15 @@ export default {
     window.addEventListener('scroll', this.handleScroll)
   },
   methods: {
+    onSubmit () {
+
+    },
+    onTyping (form) {
+      if (!this.form.active) {
+        this.form.active = true
+        setTimeout(() => { this.form.active = false }, 2000)
+      }
+    },
     handleScroll () {
       var windowScrollPixels = (document.body.scrollTop || document.documentElement.scrollTop)
       var node = document

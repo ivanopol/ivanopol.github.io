@@ -64,7 +64,16 @@
         animation animationActionUp 0.6s infinite ease-in
       .skills_row_value>.skills_row_value_down:after
         position: relative
-        animation animationActionDown 0.6s infinite ease-in       
+        animation animationActionDown 0.6s infinite ease-in
+form
+  .typing
+    animation animationTyping 1s ease-out infinite
+
+@keyframes animationTyping {
+  0% { color: #8c8c8c } 
+  50% { color: #2d2d2d }
+  100% { color: #8c8c8c }  
+}
 
 @keyframes animationBornBlinking {
   0% { opacity:1 }
