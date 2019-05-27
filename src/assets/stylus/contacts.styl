@@ -1,5 +1,10 @@
 #contacts
   .appeal_wrapper
+    overflow: hidden
+    width: 735px
+    margin: 0 auto 50px
+    padding: 0 50px
+    box-sizing: content-box  
     .message
       max-width 20.4166vw
       color white
@@ -10,7 +15,7 @@
       border-radius 5.2083vw
       padding 1.354vw 1.666vw 1.354vw 2.0833vw
       box-sizing content-box
-      margin 0 auto 4.1666vw
+      margin 0 auto 30px
       user-select none
       .extended_logo
         display block
@@ -22,21 +27,63 @@
       &:after
         content ""
         display block
-        background url(./assets/icons/message.svg) no-repeat bottom right
+        background url(./assets/icons/message_tail.svg) no-repeat bottom right
         position absolute
         width 1.8229vw
         height 2.864583vw     
         right -0.5729vw
         bottom 0
+    .message_response
+      max-width 19.4166vw
+      color black
+      font-size 1.25vw
+      line-height 1.5625vw
+      background-color message_response_bg
+      position relative
+      border-radius 5.2083vw
+      padding 1.354vw 1.666vw
+      box-sizing content-box
+      margin 0 auto 20px
+      float left
+      clear left
+      left 120px
+      user-select none
+      animation animationEnter 1s ease-out 1
+      @keyframes animationEnter {
+        0% { transform: scale(0) }
+        50% { transform: scale(1.1) }
+        100% { transform: scale(1) }  
+      }
+      &:before
+        content ""
+        display block
+        background url(./assets/icons/message_response_tail.svg) no-repeat bottom right
+        position absolute
+        width 1.8229vw
+        height 2.864583vw     
+        left -0.5729vw
+        bottom 0 
+      &:after
+        content ''
+        display block
+        background url(./assets/icons/unknown_user.svg) no-repeat bottom right
+        position absolute
+        border-radius: 50px        
+        width 100px
+        height 100px
+        left -120px
+        bottom -10px
   form 
     margin 0 auto 4.1666vw
     max-width 24.73958vw
+    position relative
     .typing_wrap
       margin-left 20px
       margin-bottom 5px
       display block
-      width 90px
-      height 16px
+      width 100%
+      position absolute
+      bottom 100%    
       .typing
         font-size 16px
         color gray   

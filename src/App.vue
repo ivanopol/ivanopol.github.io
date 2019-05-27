@@ -367,7 +367,10 @@
                   )
       #contacts
         div.title Контакты
-        div.appeal_wrapper
+        div(
+          class="appeal_wrapper"
+          id="messages"
+        )
           div.message Заинтересованы в сотрудничестве?
                     br
                     |  Вы можете отправить мне сообщение
@@ -375,8 +378,6 @@
                     div.extended_logo
                       icon-logo
         form(
-          action="https://formspree.io/ivanopol777@mail.ru"
-          method="POST"
           @submit.prevent="onSubmit"
         )
           span.typing_wrap
@@ -384,6 +385,14 @@
               class="typing"
               v-show="form.active === true"
             ) Печатает...
+            span(
+              class="typing"
+              v-if="form.submitStatus === 'empty'"
+            ) Вы кое-что забыли ;)
+            span(
+              class="typing"
+              v-if="form.submitStatus === 'error'"
+            ) Извините, ваше сообщение не доставленно из-за ошибки.<br> Скоро я всё починю.
           textarea(
             id="message"
             name="message"
@@ -437,6 +446,7 @@ export default {
     return {
       form: {
         message: '',
+        submitStatus: null,
         active: false
       },
       animations: {
@@ -476,15 +486,49 @@ export default {
   },
   methods: {
     onSubmit () {
+      if (this.form.message === '') {
+        this.form.submitStatus = 'empty'
+        return false
+      }
 
+      this.form.submitStatus = null
+      const options = {
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'X-Requested-With': 'XMLHttpRequest',
+          'accept': 'application/json'
+        }
+      }
+      var data = new FormData()
+      var formMessage = this.form.message
+      var messageResponse
+      data.set('message', formMessage)
+      this.form.message = ''
+
+      messageResponse = document.createElement('div')
+      messageResponse.className = 'message_response'
+      messageResponse.innerHTML = formMessage
+      document.getElementById('messages').appendChild(messageResponse)
+
+      this.axios.post('http://ivanopyy.bget.ru/', data, options)
+        .then(response => {
+          if (response.status === 200) {}
+        })
+        .catch(e => {
+          this.form.submitStatus = 'error'
+        })
     },
     onTyping (form) {
+      if (this.form.submitStatus === 'empty' || this.form.submitStatus === 'error') {
+        this.form.submitStatus = null
+      }
       if (!this.form.active) {
         this.form.active = true
         setTimeout(() => { this.form.active = false }, 2000)
       }
     },
     handleScroll () {
+      // Animation launch control
       var windowScrollPixels = (document.body.scrollTop || document.documentElement.scrollTop)
       var node = document
       if (this.animations.greeting === 0 && this.animations.history === 0 && this.animations.contacts === 0) {

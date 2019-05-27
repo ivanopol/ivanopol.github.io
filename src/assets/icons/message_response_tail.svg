@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 30.52 48.25"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="message_response_tail.svg"
+   inkscape:version="0.92.4 (33fec40, 2019-01-16)">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>message</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1026"
+     id="namedview12"
+     showgrid="false"
+     inkscape:zoom="4.8911917"
+     inkscape:cx="15.26"
+     inkscape:cy="24.125"
+     inkscape:window-x="1366"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.a{fill:#35a2ff;}</style>
+  </defs>
+  <title
+     id="title6">message</title>
+  <path
+     class="a"
+     d="m 10.994322,0.20444918 c 0,0 1.86,23.70999882 1.15,28.85999882 a 27.66,27.66 0 0 1 -6.9999996,14.51 19.21,19.21 0 0 1 -4.91000002,3.93 0.5,0.5 0 0 0 0.26,0.94 c 8.73999972,-0.59 28.99999962,-9.39 29.99999962,-21.76 0.5,-6.51 -19.5,-26.47999882 -19.5,-26.47999882 z"
+     id="path8"
+     inkscape:connector-curvature="0"
+     style="fill:#e5e4ea;fill-opacity:0.94117647" />
+</svg>
