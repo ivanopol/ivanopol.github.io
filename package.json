@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Dmitry Ivanov (Backe-end deveoper) portfolio",
+  "description": "Dmitry Ivanov (Back-end deveoper) portfolio",
   "author": "ivanopol <ivanopol777@mail.ru>",
   "private": true,
   "scripts": {
@@ -11,9 +11,11 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "jshint": "^2.10.2",
     "stylus-reset": "0.0.1",
     "vue": "^2.5.2",
+    "vue-axios": "^2.1.4",
     "vue-burger-menu": "^2.0.1",
     "vue-router": "^3.0.1",
     "vue-scrollactive": "^0.8.0",
