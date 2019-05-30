@@ -1,52 +1,55 @@
 #contacts
+  context = 19.2
+  get-vw(target) 
+    (target / context)vw 
   .appeal_wrapper
     overflow: hidden
-    width: 735px
-    margin: 0 auto 50px
-    padding: 0 50px
+    width: get-vw(735px)
+    margin: 0 auto get-vw(50px)
+    padding: 0 get-vw(50px)
     box-sizing: content-box  
     .message
-      max-width 20.4166vw
+      max-width get-vw(392px)
       color white
-      font-size 1.25vw
-      line-height 1.5625vw
+      font-size get-vw(24px)
+      line-height get-vw(30px)
       background-color message_bg
       position relative
-      border-radius 5.2083vw
-      padding 1.354vw 1.666vw 1.354vw 2.0833vw
+      border-radius get-vw(100px)
+      padding get-vw(26px) get-vw(32px) get-vw(26px) get-vw(40px)
       box-sizing content-box
       margin 0 auto 30px
       user-select none
       .extended_logo
         display block
-        width 5.2083vw
-        height 5.2083vw
+        width get-vw(100px)
+        height get-vw(100px)
         position absolute
-        right -6.614583vw
-        bottom -0.52083vw      
+        right get-vw(-127px)
+        bottom get-vw(-10px)      
       &:after
         content ""
         display block
         background url(./assets/icons/message_tail.svg) no-repeat bottom right
         position absolute
-        width 1.8229vw
-        height 2.864583vw     
-        right -0.5729vw
+        width get-vw(35px)
+        height get-vw(55px)
+        right get-vw(-11px)
         bottom 0
     .message_response
-      max-width 19.4166vw
+      max-width get-vw(373px)
       color black
-      font-size 1.25vw
-      line-height 1.5625vw
+      font-size get-vw(24px)
+      line-height get-vw(30px)
       background-color message_response_bg
       position relative
-      border-radius 5.2083vw
-      padding 1.354vw 1.666vw
+      border-radius get-vw(100px)
+      padding get-vw(26px) get-vw(32px)
       box-sizing content-box
-      margin 0 auto 20px
+      margin 0 auto get-vw(20px)
       float left
       clear left
-      left 120px
+      left get-vw(120px)
       user-select none
       animation animationEnter 1s ease-out 1
       @keyframes animationEnter {
@@ -59,27 +62,27 @@
         display block
         background url(./assets/icons/message_response_tail.svg) no-repeat bottom right
         position absolute
-        width 1.8229vw
-        height 2.864583vw     
-        left -0.5729vw
+        width get-vw(35px)
+        height get-vw(55px)    
+        left get-vw(-11px)
         bottom 0 
       &:after
         content ''
         display block
         background url(./assets/icons/unknown_user.svg) no-repeat bottom right
         position absolute
-        border-radius: 50px        
-        width 100px
-        height 100px
-        left -120px
-        bottom -10px
+        border-radius: get-vw(50px)
+        width get-vw(100px)
+        height get-vw(100px)
+        left get-vw(-120px)
+        bottom get-vw(-10px)
   form 
-    margin 0 auto 4.1666vw
-    max-width 24.73958vw
+    margin 0 auto get-vw(80px)
+    max-width get-vw(475px)
     position relative
     .typing_wrap
-      margin-left 20px
-      margin-bottom 5px
+      margin-left get-vw(20px)
+      margin-bottom get-vw(5px)
       display block
       width 100%
       position absolute
@@ -89,20 +92,20 @@
         color gray   
     textarea
       width 100%
-      height 15.625vw
-      font-size 1.25vw
-      line-height 1.5625vw
+      height get-vw(300px)
+      font-size get-vw(24px)
+      line-height get-vw(30px)
       background-color bg
       resize none
-      margin-bottom 1.8229vw
+      margin-bottom get-vw(35px)
       outline none
       border none
-      border-radius 1.0416vw
-      padding 1.0416vw
+      border-radius get-vw(20px)
+      padding get-vw(20px)
     input.button 
-      width 9.6354vw
+      width  get-vw(185px)
       margin 0 auto
-      font-size 0.9375vw
+      font-size  get-vw(18px)
       font-weight bold
       outline none 
       cursor pointer
@@ -122,27 +125,27 @@
   footer 
     width 100%
     background-color bg
-    padding 1.8229vw 0 1.5625vw
+    padding get-vw(35px) 0 get-vw(30px)
     ul.contacts
       display flex
       flex-wrap nowrap
       justify-content center
       align-items center     
       li
-        margin-right 3.38541vw
+        margin-right get-vw(65px)
         &:last-child
           margin-right 0
         a
           display block
           &.moi_krug img
-            width 9.4791vw
-            height 2.2916vw
+            width get-vw(182px)
+            height get-vw(44px)
           &.github img
-            width 6.66vw
-            height 1.8229vw
+            width get-vw(128px)
+            height get-vw(35px)
           &.linkedin img
-            width 8.802vw
-            height 2.1875vw
+            width get-vw(169px)
+            height get-vw(42px)
           img
             transition all .3s ease-out
           img:hover
