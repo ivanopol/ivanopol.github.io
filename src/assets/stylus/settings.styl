@@ -44,26 +44,30 @@ input
   padding-bottom 3px
   cursor help
 
+context = 19.2
+get-vw(target) 
+  (target / context)vw
+
 underline()
   content ""
   display block
   background-color blue
-  width 7.8vw
+  width get-vw(150px)
   max-width 150px
-  height 0.42vw
+  height get-vw(8px)
   max-height 8px
   border-radius 20px
-  margin 1.511vw auto 0
+  margin get-vw(29px) auto 0
   position relative
   @media screen and (min-width: 1920px)
     margin 29px auto 0
 .title
-  font-size 1.875vw
+  font-size get-vw(36px)
   font-weight bold
   text-align center
-  letter-spacing 0.104vw
-  margin-top 3.75vw
-  margin-bottom 4.2708vw
+  letter-spacing get-vw(2px)
+  margin-top get-vw(72px)
+  margin-bottom get-vw(82px)
   &:after
     underline()
 a
@@ -72,13 +76,13 @@ a
   display block
   background-color active
   color black
-  font-size 1.2vw
+  font-size get-vw(23px)
   font-weight 700
-  line-height 1.2vw
+  line-height get-vw(23px)
   letter-spacing 1px
   text-transform uppercase
   text-decoration none
-  padding 0.85vw 1.23vw 0.52083vw 1.2vw
+  padding get-vw(16px) get-vw(23px) get-vw(10px) get-vw(23px)
   border-radius: 50px
   transition background 0.2s ease-out
   user-select none
@@ -86,9 +90,9 @@ a
     background select
   .icon_pdf
   .icon_zoom
-    width 1.45vw
-    height 1.6vw
-    margin-left 0.48vw
+    width get-vw(28px)
+    height get-vw(31px)
+    margin-left get-vw(9px)
     display inline-block    
     vertical-align middle
     position relative
@@ -106,7 +110,7 @@ a
   background-color active !important
 
 .img_wrapper
-  height 18.8vw
+  height get-vw(361px)
   display flex
   flex-wrap nowrap
   justify-content center  
@@ -121,14 +125,14 @@ a
   display block
   margin-right auto
   margin-left auto
-  padding 0 3.19vw
+  padding 0 get-vw(61px)
   &:before, &:after 
     content ''
     display table
   &:after 
     clear both
   .block_wrapper
-    margin-top 8.59375vw
+    margin-top get-vw(165px)
     display flex
     flex-wrap nowrap
     justify-content center
@@ -141,5 +145,5 @@ a
   background-color bg
   width 100vw
   min-width 320px
-  padding 1.57vw 0 5vw
+  padding get-vw(30px) 0 get-vw(96px)
   
