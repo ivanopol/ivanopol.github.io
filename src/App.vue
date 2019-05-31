@@ -199,51 +199,86 @@
             div.skills_block
               div.skills_title Языки
               div.skills_inner
-                div.skills_row(
-                    v-tooltip="skills.php"
+                v-popover(
+                  placement="top"
+                )
+                  div.skills_row
+                    div.skills_row_name PHP 5-7
+                    div.skills_row_value
+                      div.skills_row_value_100.skills_row_value_up
+                  template(
+                    slot="popover"
                   )
-                  div.skills_row_name PHP 5-7
-                  div.skills_row_value
-                    div.skills_row_value_100.skills_row_value_up
-                div.skills_row(
-                    v-tooltip="skills.python"
+                    p {{ skills.php }}
+                v-popover(
+                  placement="top"
+                )
+                  div.skills_row
+                    div.skills_row_name Python
+                    div.skills_row_value
+                      div.skills_row_value_10.skills_row_value_up
+                  template(
+                    slot="popover"
                   )
-                  div.skills_row_name Python
-                  div.skills_row_value
-                    div.skills_row_value_10.skills_row_value_up
+                    p {{ skills.python }}
             div.skills_block
               div.skills_title Фреймворки и CMS
               div.skills_inner
-                div.skills_row(
-                    v-tooltip="skills.modx"
+                v-popover(
+                  placement="top"
+                )
+                  div.skills_row
+                    div.skills_row_name MODx
+                    div.skills_row_value
+                      div.skills_row_value_100.skills_row_value_down
+                  template(
+                    slot="popover"
                   )
-                  div.skills_row_name MODx
-                  div.skills_row_value
-                    div.skills_row_value_100.skills_row_value_down
-                div.skills_row(
-                    v-tooltip="skills.laravel"
+                    p {{ skills.modx }}
+                v-popover(
+                  placement="top"
+                )
+                  div.skills_row
+                    div.skills_row_name Laravel
+                    div.skills_row_value
+                      div.skills_row_value_50.skills_row_value_up
+                  template(
+                    slot="popover"
                   )
-                  div.skills_row_name Laravel
-                  div.skills_row_value
-                    div.skills_row_value_50.skills_row_value_up
-                div.skills_row(
-                    v-tooltip="skills.yii"
+                    p {{ skills.laravel }}
+                v-popover(
+                  placement="top"
+                )
+                  div.skills_row
+                    div.skills_row_name Yii
+                    div.skills_row_value
+                      div.skills_row_value_50.skills_row_value_down
+                  template(
+                    slot="popover"
                   )
-                  div.skills_row_name Yii
-                  div.skills_row_value
-                    div.skills_row_value_50.skills_row_value_down
-                div.skills_row(
-                    v-tooltip="skills.drupal"
+                    p {{ skills.yii }}
+                v-popover(
+                  placement="top"
+                )
+                  div.skills_row
+                    div.skills_row_name Drupal
+                    div.skills_row_value
+                      div.skills_row_value_25.skills_row_value_down
+                  template(
+                    slot="popover"
                   )
-                  div.skills_row_name Drupal
-                  div.skills_row_value
-                    div.skills_row_value_25.skills_row_value_down
-                div.skills_row(
-                    v-tooltip="skills.bitrix"
+                    p {{ skills.drupal }}
+                v-popover(
+                  placement="top"
+                )
+                  div.skills_row
+                    div.skills_row_name 1C Битрикс
+                    div.skills_row_value
+                      div.skills_row_value_10.skills_row_value_down
+                  template(
+                    slot="popover"
                   )
-                  div.skills_row_name 1C Битрикс
-                  div.skills_row_value
-                    div.skills_row_value_10.skills_row_value_down
+                    p {{ skills.bitrix }}
           div(
             class="skills"
             v-if="tabs[1].active === true"
@@ -251,57 +286,90 @@
             div.skills_block
               div.skills_title Языки
               div.skills_inner
-                div.skills_row(
-                    v-tooltip="skills.javascript"
+                v-popover(
+                  placement="top"
+                )
+                  div.skills_row
+                    div.skills_row_name Javascript
+                    div.skills_row_value
+                      div.skills_row_value_50.skills_row_value_up
+                  template(
+                    slot="popover"
                   )
-                  div.skills_row_name Javascript
-                  div.skills_row_value
-                    div.skills_row_value_50.skills_row_value_up
+                    p {{ skills.javascript }}
             div.skills_block
               div.skills_title Фреймворки
               div.skills_inner
-                div.skills_row(
-                    v-tooltip="skills.jquery"
+                v-popover(
+                  placement="top"
+                )
+                  div.skills_row
+                    div.skills_row_name JQuery
+                    div.skills_row_value
+                      div.skills_row_value_100.skills_row_value_down
+                  template(
+                    slot="popover"
                   )
-                  div.skills_row_name JQuery
-                  div.skills_row_value
-                    div.skills_row_value_100.skills_row_value_down
-                div.skills_row(
-                    v-tooltip="skills.vuejs"
+                    p {{ skills.jquery }}
+                v-popover(
+                  placement="top"
+                )
+                  div.skills_row
+                    div.skills_row_name VueJS
+                    div.skills_row_value
+                      div.skills_row_value_25.skills_row_value_up
+                  template(
+                    slot="popover"
                   )
-                  div.skills_row_name VueJS
-                  div.skills_row_value
-                    div.skills_row_value_25.skills_row_value_up
-                div.skills_row(
-                    v-tooltip="skills.react"
+                    p {{ skills.vuejs }}
+                v-popover(
+                  placement="top"
+                )
+                  div.skills_row
+                    div.skills_row_name React
+                    div.skills_row_value
+                      div.skills_row_value_10.skills_row_value_up
+                  template(
+                    slot="popover"
                   )
-                  div.skills_row_name React
-                  div.skills_row_value
-                    div.skills_row_value_10.skills_row_value_up
+                    p {{ skills.react }}
             div.skills_block
               div.skills_title Вёрстка
               div.skills_inner
-                div.skills_row(
-                    v-tooltip="skills.layout"
+                v-popover(
+                  placement="top"
+                )
+                  div.skills_row
+                    div.skills_row_name CSS, SCSS, Stylus
+                    div.skills_row_value
+                      div.skills_row_value_100.skills_row_value_up
+                  template(
+                    slot="popover"
                   )
-                  div.skills_row_name CSS, SCSS, Stylus
-                  div.skills_row_value
-                    div.skills_row_value_100.skills_row_value_up
-                div.skills_row(
-                    v-tooltip="skills.design"
+                    p {{ skills.layout }}
+                v-popover(
+                  placement="top"
+                )
+                  div.skills_row
+                    div.skills_row_name Photoshop, Ai
+                    div.skills_row_value
+                      div.skills_row_value_100.skills_row_value_up
+                  template(
+                    slot="popover"
                   )
-                  div.skills_row_name Photoshop, Ai
-                  div.skills_row_value
-                    div.skills_row_value_100.skills_row_value_up
+                    p {{ skills.design }}
           div.skills_other
             div.skills_other_block
               div.skills_other_title Окружение
-              div.skills_other_list
-                span(
-                  class="tooltip"
-                  title="Около 6 лет я пользуюсь ОС Linux. Более 4-х лет использую разные виды ОС как основую и единственную систему на всех компьютерах. В командной строке чувствую себя уверенно, но есть ещё чему учиться"
-                ) Linux
-                |  (Ubuntu, Debian, Arch, Deepin, Solus)
+                v-popover(
+                  placement="top"
+                )
+                  div.skills_other_list
+                    span.tooltip_other Linux (Ubuntu, Debian, Arch, Deepin, Solus)
+                  template(
+                    slot="popover"
+                  )
+                    p {{ skills.environment }}
               div.skills_other_list Docker, Vagrant, XAMPP, Ubuntu server на VirtualBox
               div.skills_other_list Git, Github, Bitbucket
               div.skills_other_list Composer, Webpack & Gulp
@@ -491,7 +559,8 @@ export default {
         vuejs: 'Этот сайт сделан на VueJS. Мне он пришёлся по душе. Я хочу больше использовать его в работе и разбираться его возможностями',
         react: 'Довелось немного использовать React на одном из проектов. Также как и VueJS он очень привлекает своими возможностями и мне бы хотелось разобраться с ним',
         layout: 'Я много занимался вёрсткой. Начинал со статичной табличной вёрстки. Затем была блочная, адаптивная, отзывчивая и т.д.. Есть опыт работы программистом-верстальщиком. Чувствую себя достаточно комфортно в вёрстке и в дальнейшем буду развиватсья в этом направлении',
-        design: 'До программирование и паралельно с ним я занимался веб-дизайном, рисовал, анимировал, делал 3D. Поэтому, я довольно комфортно себя чувствую с такими инструментами как Photoshop, Illustrator и их аналоги'
+        design: 'До программирование и паралельно с ним я занимался веб-дизайном, рисовал, анимировал, делал 3D. Поэтому, я довольно комфортно себя чувствую с такими инструментами как Photoshop, Illustrator и их аналоги',
+        environment: 'Около 6 лет я пользуюсь ОС Linux. Более 4-х лет использую разные виды ОС как основую и единственную систему на всех компьютерах. В командной строке чувствую себя уверенно, но есть ещё чему учиться'
       }
     }
   },
