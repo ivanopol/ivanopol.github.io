@@ -24,10 +24,10 @@
 Тенториум
 Администратор сайтов в компании
 Администрировал и дорабатывал сайты:
-1) [tentorium.ru (1C Битрикс)](https://tentorium.ru/ "Tentorium"){:target="_blank"};
+1) [tentorium.ru (1C Битрикс)](https://tentorium.ru/ "Tentorium"  target="_blank");
 2) save-bee.ru (1C Битрикс);
 3) Внутренний корпоративный портал компании (1C Битрикс);
-4) [apispa.ru.](http://apispa.ru/ "Apispa"){:target="_blank"}
+4) [apispa.ru.](http://apispa.ru/ "Apispa"  target="_blank")
 Также, занимался: разработкой электронного документооборота компании (разработка архитектуры БД, программирование под CMS Bitrix), разработкой модуля личного кабинета для tentorium.ru (отчёты, диаграммы, одноразовые ссылки на документы т.д.), написанием «гаджетов» для корпоративного портала, разработкой электронных конкурсов и тестов для корпоративного портала (на JQuery + MySQL) размещением информации и аккаунтов в социальных сетях.
 
 #### 2013
@@ -78,13 +78,13 @@ MySQL
 ООП, PSR, SOLID, KISS
 
 ### Последние прочитанные книги
-1. [Использование Docker](https://www.ozon.ru/context/detail/id/139411597){:target="_blank"},
+1. [Использование Docker](https://www.ozon.ru/context/detail/id/139411597 "Использование Docker" target="_blank"),
 2. [Design Patterns in PHP and Laravel](https://www.amazon.com/Design-Patterns-Laravel-Kelt-Dockins/dp/1484224507){:target="_blank"},
-3. [Джедайские техники](https://www.ozon.ru/context/detail/id/140376487/){:target="_blank"},
-4. [Чистый код: создание, анализ и рефакторинг](https://www.ozon.ru/context/detail/id/28336354/){:target="_blank"},
-5. [Head First. Паттерны проектирования](https://www.ozon.ru/context/detail/id/144233005/){:target="_blank"},
-6. [PHP. Объекты, шаблоны и методики программировани](https://www.ozon.ru/context/detail/id/148737571/){:target="_blank"}.
+3. [Джедайские техники](https://www.ozon.ru/context/detail/id/140376487/ "Джедайские техники" target="_blank"),
+4. [Чистый код: создание, анализ и рефакторинг](https://www.ozon.ru/context/detail/id/28336354/ "Чистый код: создание, анализ и рефакторинг" target="_blank"),
+5. [Head First. Паттерны проектирования](https://www.ozon.ru/context/detail/id/144233005/ "Head First. Паттерны проектирования" target="_blank"),
+6. [PHP. Объекты, шаблоны и методики программирования](https://www.ozon.ru/context/detail/id/148737571/ "PHP. Объекты, шаблоны и методики программирования" target="_blank").
 
 ### Контакты
 Заинтересованы в сотрудничестве?  Вы можете отправить мне сообщение в социальных сетях.
-[Мой круг](https://moikrug.ru/ivanopol)  [LinkedIn](https://www.linkedin.com/in/ivanopol)
+[Мой круг](https://moikrug.ru/ivanopol "Мой круг" target="_blank")  [LinkedIn](https://www.linkedin.com/in/ivanopol "LinkedIn" target="_blank")
