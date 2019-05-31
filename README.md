@@ -1,4 +1,6 @@
-![Logo](./src/assets/images/logo_animation.gif)
+<p align="center">
+  <img src="./src/assets/images/logo_animation.gif" alt="Ivanov Dmitry portfolio"/>
+</p>
 
 # Дмитрий Иванов
 ### BACKEND DEVELOPER
