@@ -42,99 +42,106 @@
       width get-vw(17px)
       height get-vw(19px)
       margin-left get-vw(9px)
-  .menu 
-    background none
-    padding get-vw(12px) get-vw(15px) 0
-    justify-content space-between
-    .logo
-      width auto
-      svg
-        width get-vw(70px)
-        .ivanopol_logo
-          .a
-            fill #c1c1f9
-    nav
-      display none
-  .appeal
-    width 100%
-    padding get-vw(20px) get-vw(40px)
-    margin 0
-    max-width none
-    h1
-      font-size get-vw(30px)
-      line-height get-vw(30px)
-      margin-bottom get-vw(8px)
-    h2 
-      font-size get-vw(12px)
-      margin-bottom 0
-    p
-      font-size get-vw(14px)
-      line-height get-vw(20px)
-      width 100%
-      max-width none
-      margin 0 0 get-vw(18px)
-    .underline
-      background-color blue
-      width get-vw(90px)
-      max-width get-vw(90px)
-      height get-vw(4px)
-      max-height get-vw(4px)
-      border-radius get-vw(20px)
-      margin get-vw(10px) 0   
-    .button_wrapper
-      text-align center
-      .button
-        float none
-        display inline-block
-  .illustration
-    width 100%
-    background-color select
-    #illustration
-      .computer_wrap
-        width get-vw(290px)
-        position relative
-        margin get-vw(110px) auto 0
-        left inherit
-        top inherit
-        .telnet_wrap
-          width get-vw(190px)
-          height get-vw(112px)
-          top get-vw(60px)
-          left get-vw(27px)
-          padding get-vw(7px)
-          .vue-typer
-            font-size get-vw(18px)
-            line-height: get-vw(18px)
-      .icon_docker
-        top get-vw(-56px)
-        left get-vw(86px)
-        width get-vw(68px)
-        height get-vw(62px)
-      .icon_vim 
-        top get-vw(71px)
-        left get-vw(10px)
-        width get-vw(32px)
-        height get-vw(32px)
-      .icon_ubuntu
-        top get-vw(-24px)
-        left get-vw(260px)
-        width get-vw(44px)
-        height get-vw(42px)
-      .icon_bitbucket
-        top get-vw(121px)
-        left get-vw(317px)
-        width get-vw(35px)
-        height get-vw(35px)
-      .icon_github
-        top get-vw(-85px)
-        left get-vw(220px)
-        width get-vw(40px)
-        height get-vw(40px)
-      .icon_laravel
-      .icon_git
-      .icon_git2
-      #background
+  //#############################################
+  // Greeting
+  //#############################################   
+  #greeting   
+    .menu 
+      background none
+      padding get-vw(12px) get-vw(15px) 0
+      justify-content space-between
+      .logo
+        width auto
+        svg
+          width get-vw(70px)
+          .ivanopol_logo
+            .a
+              fill #c1c1f9
+      nav
         display none
+    .appeal
+      width 100%
+      padding get-vw(20px) get-vw(40px)
+      margin 0
+      max-width none
+      h1
+        font-size get-vw(30px)
+        line-height get-vw(30px)
+        margin-bottom get-vw(8px)
+      h2 
+        font-size get-vw(12px)
+        margin-bottom 0
+      p
+        font-size get-vw(14px)
+        line-height get-vw(20px)
+        width 100%
+        max-width none
+        margin 0 0 get-vw(18px)
+      .underline
+        background-color blue
+        width get-vw(90px)
+        max-width 90px
+        height get-vw(4px)
+        max-height get-vw(4px)
+        border-radius get-vw(20px)
+        margin get-vw(10px) 0   
+      .button_wrapper
+        text-align center
+        .button
+          float none
+          display inline-block
+    .illustration
+      width 100%
+      background-color select
+      #illustration
+        .computer_wrap
+          width get-vw(290px)
+          position relative
+          margin get-vw(110px) auto 0
+          left inherit
+          top inherit
+          .telnet_wrap
+            width get-vw(190px)
+            height get-vw(112px)
+            top get-vw(60px)
+            left get-vw(27px)
+            padding get-vw(7px)
+            .vue-typer
+              font-size get-vw(18px)
+              line-height: get-vw(18px)
+        .icon_docker
+          top get-vw(-56px)
+          left get-vw(86px)
+          width get-vw(68px)
+          height get-vw(62px)
+        .icon_vim 
+          top get-vw(71px)
+          left get-vw(10px)
+          width get-vw(32px)
+          height get-vw(32px)
+        .icon_ubuntu
+          top get-vw(-24px)
+          left get-vw(260px)
+          width get-vw(44px)
+          height get-vw(42px)
+        .icon_bitbucket
+          top get-vw(121px)
+          left get-vw(317px)
+          width get-vw(35px)
+          height get-vw(35px)
+        .icon_github
+          top get-vw(-85px)
+          left get-vw(220px)
+          width get-vw(40px)
+          height get-vw(40px)
+        .icon_laravel
+        .icon_git
+        .icon_git2
+        #background
+          display none
+  //#############################################
+  // History
+  //#############################################          
   #history
     .slide
       height get-vw(668px)
@@ -144,10 +151,10 @@
           height get-vw(230px)
         img 
           &.pgti_img
-            max-width get-vw(102px)
+            max-width 102px
             width get-vw(102px)
           &.pnipu_img
-            max-width get-vw(210px)
+            max-width 210px
             width get-vw(130px)
           &.avatar
             width get-vw(180px)
@@ -190,6 +197,9 @@
       left get-vw(97px)
     .arrow_right
       right get-vw(97px)
+  //#############################################
+  // Experience
+  //#############################################         
   #experience
     .timeline_block
       font-size get-vw(12px)
@@ -198,7 +208,9 @@
       width 85%
       border-left-width get-vw(4px)
       border-left-style solid
-      border-left-color dark_active
+      border-left-color dark_active   
+      padding-bottom get-vw(14px)
+      padding-left get-vw(14px)               
       &:last-child
         padding-bottom get-vw(50px)
         border-left-color transparent      
@@ -228,6 +240,9 @@
         &.position
           font-size get-vw(12px)
           margin get-vw(2px) 0 get-vw(8px)
+  //#############################################
+  // Skills
+  //#############################################           
   #skills
     padding-bottom get-vw(60px)
   .tabs
@@ -316,6 +331,9 @@
       .skills_other_list
         margin-top get-vw(8px)
         font-weight normal
+  //#############################################
+  // Books
+  //#############################################           
   #books
     padding-bottom get-vw(60px)
     .books_wrapper
@@ -371,8 +389,12 @@
               -o-transition all .3s ease
               transition all .3s ease
               user-select none
+  //#############################################
+  // Contacts
+  //#############################################               
   #contacts
     .appeal_wrapper
+      margin: 0 auto 50px
       .message
         max-width none
         width get-vw(236px)
@@ -403,6 +425,29 @@
           height get-vw(53px)
           right get-vw(-3px)
           bottom get-vw(3px)
+      .message_response_wrapper
+        left get-vw(80px)
+        max-width 73% 
+        .message_response
+          font-size get-vw(14px)
+          line-height get-vw(16px)
+          border-radius get-vw(30px)
+          padding get-vw(13px) get-vw(26px)
+          margin 0 auto 4px
+          word-break: break-word
+          &:before
+            width get-vw(16px)
+            height get-vw(53px)    
+            left get-vw(-5px)
+            bottom 0 
+          &:after
+            border-radius: get-vw(50px)
+            width get-vw(50px)
+            height get-vw(50px)
+            left get-vw(-55px)
+            bottom get-vw(-10px)
+        .status
+          margin-left: get-vw(8px)          
     form 
       margin 0 auto get-vw(40px)
       max-width none

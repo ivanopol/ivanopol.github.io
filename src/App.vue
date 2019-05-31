@@ -501,21 +501,48 @@ export default {
       }
       var data = new FormData()
       var formMessage = this.form.message
-      var messageResponse
+      var messages, messagesCount, messageResponse, messageBlock, messageStatus
       data.set('message', formMessage)
       this.form.message = ''
 
+      messages = document.getElementById('messages')
+      messagesCount = messages.getElementsByClassName('message_response_wrapper').length
+
+      messageBlock = document.createElement('div')
+      messageBlock.className = 'message_response'
+      messageBlock.innerHTML = formMessage
+
+      messageStatus = document.createElement('span')
+      messageStatus.className = 'status'
+
       messageResponse = document.createElement('div')
-      messageResponse.className = 'message_response'
-      messageResponse.innerHTML = formMessage
+      messageResponse.className = 'message_response_wrapper msg' + messagesCount
+      messageResponse.appendChild(messageBlock)
+      messageResponse.appendChild(messageStatus)
+
       document.getElementById('messages').appendChild(messageResponse)
 
       this.axios.post('http://ivanopyy.bget.ru/', data, options)
         .then(response => {
-          if (response.status === 200) {}
+          if (response.status === 200) {
+            var successFunc = function () {
+              var el = messages.querySelector('.msg' + messagesCount)
+              var elStatus = el.querySelector('.status')
+              elStatus.className = 'status success'
+              elStatus.innerHTML = 'Доставлено'
+            }
+            setTimeout(successFunc, 1000)
+          }
         })
         .catch(e => {
           this.form.submitStatus = 'error'
+          var errorFunc = function () {
+            var el = messages.querySelector('.msg' + messagesCount)
+            var elStatus = el.querySelector('.status')
+            elStatus.className = 'status error'
+            elStatus.innerHTML = 'Ошибка'
+          }
+          setTimeout(errorFunc, 1000)
         })
     },
     onTyping (form) {

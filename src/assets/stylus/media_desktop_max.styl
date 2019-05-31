@@ -224,6 +224,7 @@
         padding-bottom 147px
         .books_wrapper
             ul
+                width get-vw(2604px)
                 li
                     margin-right 22px
                     a
@@ -239,7 +240,8 @@
     #contacts
         .appeal_wrapper
             width: 735px
-            margin: 0 auto 50px            
+            margin: 0 auto 50px
+            padding: 0 70px          
             .message
                 max-width 392px
                 font-size 24px
@@ -247,7 +249,7 @@
                 border-radius 100px
                 padding 26px 32px 26px 40px
                 margin 0 auto 30px
-                &:before
+                .extended_logo
                     width 100px
                     height 100px
                     right -127px
@@ -256,20 +258,34 @@
                     width 35px
                     height 55px
                     right -11px
-            .message_response
-                max-width 392px
-                font-size 24px
-                line-height 30px
-                border-radius 70px
-                padding 26px 32px
-                margin 0 auto 30px 
-                &:before
-                    width 35px
-                    height 55px
-                    right -11px             
+            .message_response_wrapper
+                left 120px 
+                .message_response
+                    max-width 373px
+                    font-size 24px
+                    line-height 30px
+                    border-radius 60px
+                    padding 26px 32px
+                    margin 0 auto 8px
+                    &:before
+                        width 35px
+                        height 55px   
+                        left -11px
+                        bottom 0 
+                    &:after
+                        border-radius: 50px
+                        width 100px
+                        height 100px
+                        left -120px
+                        bottom -10px
+                    .status
+                        margin-left: 16px          
         form
             margin 0 auto 80px
             max-width 475px
+            .typing_wrap
+                margin-left 20px
+                margin-bottom 5px           
             textarea
                 height 300px
                 font-size 24px

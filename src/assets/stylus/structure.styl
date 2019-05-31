@@ -1,0 +1,434 @@
+//#############################################
+// Greeting
+//#############################################
+#page-wrap
+  overflow hidden
+  min-width 320px
+.menu
+  width 100vw
+  min-width 320px
+  background-color bg
+  display flex
+  flex-wrap nowrap
+  justify-content center
+  position absolute
+  top 0
+  left 0
+  z-index 10  
+  .logo
+    width 37%
+    max-width 548px
+    svg 
+      position relative
+  nav
+    a
+      float left
+      color dark
+      text-decoration none
+      position relative
+      &:last-child
+        margin-right 0
+.appeal
+  width 37%
+  max-width 548px
+  h1 
+    font-weight bold
+    color black
+    font-size-adjust 0.48
+  h2
+    font-weight 400
+    color dark
+    text-transform uppercase
+  .underline
+    background-color blue
+    max-width 150px
+    max-height 8px
+    border-radius 20px
+  p
+    color gray
+    width 80%
+    max-width 438px
+  .button
+    float left
+.illustration
+  #illustration
+    position relative
+    .computer_wrap
+      position absolute
+      .telnet_wrap
+        position absolute
+        overflow hidden
+        .vue-typer
+          font-family 'Fregat', monospace
+          user-select none
+          .custom.char.typed
+            color black
+    .icon_ubuntu  
+    .icon_github
+    .icon_laravel
+    .icon_bitbucket
+    .icon_docker
+    .icon_git
+    .icon_vim 
+    .icon_git2
+      position absolute
+//#############################################
+// History
+//#############################################      
+.slide
+  max-height 975px
+  display flex
+  justify-content center
+  align-items center
+  .content_wrapper
+    max-width: 610px
+    img
+      display block
+      &.pgti_img
+        max-width 171px
+      &.pnipu_img
+        max-width 210px
+      &.avatar
+        max-width 281px
+        max-height 281px
+        border-radius 200px
+        user-select none
+    p
+      position relative
+      .icon_born
+        max-width 32px
+        max-height 58px
+        display block
+        position absolute
+      &#born:after
+        underline()
+      &.pgti:before
+      &.pnipu:before
+        content ""
+        background url('./assets/icons/study.svg') no-repeat center center
+        max-width 51px
+        max-height 32px
+        display block
+        position absolute
+.siema_wrapper
+  position relative
+  .button_wrapper
+    text-align center
+    .button
+      display inline-block
+  .arrow
+    max-width 88px
+    max-height 88px
+    display block
+    position absolute
+    top 50%
+    cursor pointer
+    border-radius 50px
+    span
+      color gray
+      position absolute
+  .arrow_left
+    background bg url('./assets/icons/arrow_left.svg') no-repeat center
+  .arrow_right
+    background bg url('./assets/icons/arrow_right.svg') no-repeat center      
+  .arrow_left
+  .arrow_right
+    background-size 73%
+    transition background 0.2s ease-out
+    &:hover
+      background-color select
+//#############################################
+// Experience
+//#############################################               
+#experience
+  .timeline_block
+    margin 0 auto
+    width 61% 
+    max-width 904px
+    position relative  
+    &:last-child
+      border-left-color transparent
+    &:before
+      content ""
+      display block
+      background-color white
+      position absolute
+      box-sizing content-box
+    span
+      &.date
+      &.company
+      &.position
+        display block
+      &.date
+        font-weight bold
+        position absolute
+        text-align right
+      &.company
+        font-weight bold
+      &.position
+        font-style italic
+        color gray
+      &.no_site
+        color gray 
+//#############################################
+// Skills
+//#############################################            
+.tabs
+  ul 
+    display flex
+    flex-wrap nowrap
+    justify-content center  
+    align-items center    
+    li
+      float left
+      &.is-active a
+        color black
+        cursor default
+        background-color active
+      a 
+        color gray
+        background-color select
+        transition background 0.2s ease-out
+        cursor pointer
+        user-select none
+.skills
+    .skills_block
+      .skills_title
+        font-weight bold
+      .skills_inner
+        .skills_row
+          background-color bg
+          overflow hidden
+          cursor help
+          &:hover
+          &:active
+            .skills_row_value>div
+              filter brightness(108%)
+          .skills_row_name
+            font-weight normal
+            display inline-block
+            vertical-align middle
+          .skills_row_value
+            display inline-block
+            vertical-align middle
+            position relative
+            &>div
+              height 100%
+              position relative
+              transition all 0.3s linear
+              &.skills_row_value_up:after
+              &.skills_row_value_down:after
+                display block
+                position absolute
+              &.skills_row_value_100.skills_row_value_up:after
+              &.skills_row_value_100.skills_row_value_down:after
+                right get-vw(20px)
+              &.skills_row_value_up:after
+                content ""
+                background url('./assets/icons/skills_up.svg') no-repeat left center
+              &.skills_row_value_down:after
+                content ""
+                background url('./assets/icons/skills_down.svg') no-repeat left center
+            .skills_row_value_10
+              background-color red
+              width 10%
+            .skills_row_value_25
+              background-color orange
+              width 25%
+            .skills_row_value_50
+              background-color yellow
+              width 50%
+            .skills_row_value_100
+              background-color green
+              width 100%
+.skills_other
+    margin 0 auto  
+    overflow hidden
+    .skills_other_block
+      float left
+      .skills_other_title
+        font-weight bold
+      .skills_other_list
+        font-weight normal  
+//#############################################
+// Books
+//#############################################          
+#books
+  .books_wrapper
+    max-width 1298px
+    max-height 625px
+    margin 0 auto
+    ul 
+      overflow-x: auto
+      overflow-y: hidden
+      max-width 2604px
+      li
+        float left
+        &:last-child
+          margin-right 0!important
+        a
+          display inline-block
+          transition border-color 0.3s ease-out
+          user-select none
+          position relative
+          display flex
+          flex-wrap nowrap
+          justify-content center  
+          align-items center          
+          &:after
+            content ""
+            display block
+            background url(./assets/icons/paper-plane.svg) no-repeat 15px center
+            background-color rgba(40%, 35%, 63%, 0.95)
+            background-size 60%
+            position absolute
+            transition all .3s ease-out
+            opacity 0
+          &:hover
+            border-color #adadf7
+            &:after
+              opacity 1
+            img
+              -webkit-filter brightness(110%)
+              filter brightness(110%)
+          img
+            -webkit-filter brightness(95%)
+            filter brightness(95%)          
+            -webkit-transition all .3s ease
+            -moz-transition all .3s ease
+            -o-transition all .3s ease
+            transition all .3s ease
+            user-select none
+    .scrollbar-thumb
+      position relative
+      &:after
+        content ""
+        display block
+        width 5px
+        height 1px
+        position absolute
+        left 50% 
+        top 0px
+        background-color transparent
+        border 0 solid #6558a0
+        border-radius 15px
+        transition all .2s ease-in
+  @media screen and (min-width: 768px)
+    .books_wrapper:hover
+      .scrollbar-thumb
+        &:after
+          width 30px
+          height 30px
+          left calc(50% - 15px)
+          top -11px
+          border 7px solid #6558a0
+          background-color white!important
+//#############################################
+// Contacts
+//#############################################            
+#contacts
+  .appeal_wrapper
+    overflow: hidden
+    box-sizing: content-box  
+    .message
+      color white
+      background-color message_bg
+      position relative
+      box-sizing content-box
+      margin 0 auto 30px
+      user-select none
+      .extended_logo
+        display block
+        position absolute
+      &:after
+        content ""
+        display block
+        background url(./assets/icons/message_tail.svg) no-repeat bottom right
+        position absolute
+        bottom 0
+    .message_response_wrapper
+      position relative
+      float left
+      clear left
+      margin-bottom: 10px    
+      .message_response
+        color black
+        background-color message_response_bg
+        position relative
+        box-sizing content-box
+        user-select none
+        animation animationEnter 1s ease-out 1
+        @keyframes animationEnter {
+          0% { transform: scale(0) }
+          50% { transform: scale(1.1) }
+          100% { transform: scale(1) }  
+        }
+        &:before
+          content ""
+          display block
+          background url(./assets/icons/message_response_tail.svg) no-repeat bottom right
+          position absolute
+          bottom 0 
+        &:after
+          content ''
+          display block
+          background url(./assets/icons/unknown_user.svg) no-repeat bottom right
+          position absolute
+      .status
+        font-size: 14px
+      .success
+        color: success
+      .error
+        color: error
+  form 
+    position relative
+    .typing_wrap
+      display block
+      width 100%
+      position absolute
+      bottom 100%    
+      .typing
+        font-size 16px
+        color gray   
+    textarea
+      width 100%
+      background-color bg
+      resize none
+      outline none
+      border none
+    input.button 
+      margin 0 auto
+      font-weight bold
+      outline none 
+      cursor pointer
+      color white
+      border none
+      background #d81392
+      background -moz-linear-gradient(left, #ff01d1 0%, #ff01a5 28%, #ff9b33 100%)
+      background -webkit-linear-gradient(left, #ff01d1 0%,#ff01a5 28%, #ff9b33 100%)
+      background linear-gradient(to right, #ff01d1 0%, #ff01a5 28%, #ff9b33 100%)
+      -webkit-transition all .3s ease
+      -moz-transition all .3s ease
+      -o-transition all .3s ease
+      transition all .3s ease
+      user-select none      
+      &:hover
+        opacity 0.7
+  footer 
+    width 100%
+    background-color bg
+    ul.contacts
+      display flex
+      flex-wrap nowrap
+      justify-content center
+      align-items center     
+      li
+        &:last-child
+          margin-right 0
+        a
+          display block
+          img
+            transition all .3s ease-out
+          img:hover
+            filter brightness(120%)
+            user-select none                          
