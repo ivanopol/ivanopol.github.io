@@ -90,5 +90,6 @@ MySQL
 6. [PHP. Объекты, шаблоны и методики программирования](https://www.ozon.ru/context/detail/id/148737571/ "PHP. Объекты, шаблоны и методики программирования").
 
 ### Контакты
-Заинтересованы в сотрудничестве?  Вы можете отправить мне сообщение в социальных сетях.
-[Мой круг](https://moikrug.ru/ivanopol "Мой круг")  [LinkedIn](https://www.linkedin.com/in/ivanopol "LinkedIn")
+Заинтересованы в сотрудничестве?  Вы можете отправить мне сообщение в социальных сетях:
+* [Мой круг](https://moikrug.ru/ivanopol "Мой круг")  
+* [LinkedIn](https://www.linkedin.com/in/ivanopol "LinkedIn")
