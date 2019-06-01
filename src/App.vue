@@ -56,6 +56,7 @@
               img(
                 src="./assets/images/avatar.jpg"
                 class="avatar"
+                alt="Аватар: Иванов Дмитрий"
               )
               p#born Родился в 1986 году (33 года) в городе Пермь.
                 icon-born
@@ -67,6 +68,7 @@
                 img(
                   src="./assets/images/pgti.jpg"
                   class="pgti_img"
+                   alt="Логотип ПГТИ"
                 )
               p.pgti Закончил ПГТИ 2003 &mdash; 2006 года.
                     br
@@ -87,6 +89,7 @@
                 img(
                   src="./assets/images/pnipu.png"
                   class="pnipu_img"
+                  alt="Логотип ПНИПУ"
                 )
               p.pnipu Закончил ПНИПУ (ПГТУ) 2006 &mdash; 2010 года.
                     br
@@ -391,7 +394,8 @@
                 target="_blank"
                 )
                   img(
-                  src="./assets/images/books/using_docker.jpg"
+                    src="./assets/images/books/using_docker.jpg"
+                    alt="Использование Docker"
                   )
               li
                 a(
@@ -399,7 +403,8 @@
                 target="_blank"
                 )
                   img(
-                  src="./assets/images/books/design_patterns_in_php_and_laravel.jpg"
+                    src="./assets/images/books/design_patterns_in_php_and_laravel.jpg"
+                    alt="Design Patterns in PHP and Laravel"
                   )
               li
                 a(
@@ -407,7 +412,8 @@
                 target="_blank"
                 )
                   img(
-                  src="./assets/images/books/djedaiskie_tehniki.jpg"
+                    src="./assets/images/books/djedaiskie_tehniki.jpg"
+                    alt="Джедайские техники. Как воспитать свою обезьяну, опустошить инбокс и сберечь мыслетопливо"
                   )
               li
                 a(
@@ -415,7 +421,8 @@
                 target="_blank"
                 )
                   img(
-                  src="./assets/images/books/chistiy_kod.jpg"
+                    src="./assets/images/books/chistiy_kod.jpg"
+                    alt="Чистый код: создание, анализ и рефакторинг"
                   )
               li
                 a(
@@ -423,7 +430,8 @@
                 target="_blank"
                 )
                   img(
-                  src="./assets/images/books/patterny_proektirovania.jpg"
+                    src="./assets/images/books/patterny_proektirovania.jpg"
+                    alt="Head First. Паттерны проектирования. Обновленное юбилейное издание"
                   )
               li
                 a(
@@ -431,7 +439,8 @@
                 target="_blank"
                 )
                   img(
-                  src="./assets/images/books/php_objecty_shablony_i_metodiki.jpg"
+                    src="./assets/images/books/php_objecty_shablony_i_metodiki.jpg"
+                    alt="PHP. Объекты, шаблоны и методики программирования"
                   )
       #contacts
         div.title Контакты
