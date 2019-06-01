@@ -1,21 +1,95 @@
-# portfolio
+<p align="center">
+  <img src="./src/assets/images/logo_animation.gif" alt="Ivanov Dmitry portfolio"/>
+</p>
 
-> my portfolio
+# Дмитрий Иванов
+### BACKEND DEVELOPER
+Здравстуйте, меня зовут Дмитрий. Я занимаюсь веб-разработкой уже много лет и мне это занятие очень нравится. Сейчас я ищу работу на позицию backend-developer или fullstack-developer.
 
-## Build Setup
+[Скачать резюме](https://ivanopol.github.io/static/Portfolio_SPA.pdf "Скачать резюме")
 
-``` bash
-# install dependencies
-npm install
+### История
 
-# serve with hot reload at localhost:8080
-npm run dev
+Родился в 1986 году (33 года) в городе Пермь.
 
-# build for production with minification
-npm run build
+Закончил ПГТИ 2003 — 2006 года.
+Специализация:
+Программное обеспечение вычислительной техники и автоматизированных систем.
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+Закончил ПНИПУ (ПГТУ) 2006 — 2010 года.
+Специализация:
+Автоматизированные системы обработки информации и управления (АСУ).
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### Опыт работы
+#### 2006 — 2011 
+Разработка логотипов, веб-дизайна и сайтов. Свой первый интернет-магазин рыболовных товаров.
+
+#### 2011 — 2012
+Тенториум
+Администратор сайтов в компании
+Администрировал и дорабатывал сайты:
+1) [tentorium.ru (1C Битрикс)](https://tentorium.ru/ "Tentorium");
+2) save-bee.ru (1C Битрикс);
+3) Внутренний корпоративный портал компании (1C Битрикс);
+4) [apispa.ru.](http://apispa.ru/ "Apispa")
+Также, занимался: разработкой электронного документооборота компании (разработка архитектуры БД, программирование под CMS Bitrix), разработкой модуля личного кабинета для tentorium.ru (отчёты, диаграммы, одноразовые ссылки на документы т.д.), написанием «гаджетов» для корпоративного портала, разработкой электронных конкурсов и тестов для корпоративного портала (на JQuery + MySQL) размещением информации и аккаунтов в социальных сетях.
+
+#### 2013
+Federal Finance
+PHP программист
+Работа с Zend Framework над системой сбора заявок на кредиты в банки. Вёрстка.
+
+#### 2014
+Студия «Помидор»
+PHP программист
+Разработка сайтов на Drupal, Yii. Верстка, программирование. Архитектура БД.
+
+#### 2014 — 2017
+WBMS interactive
+SEO-оптимизатор, веб-программист
+Продвижение сайтов, работа над отдельными сайтами (верстка, программирование), создание лендингов. В основном на MODx.
+
+#### 2017
+«Модерн»
+Программист-верстальщик
+Адаптивная вёрстка, JS, немного back-end'а.
+
+#### 2014 — 2019
+АН «Новые дома»
+Разработчик и администратор сайта
+Создание, развитие, поддержка и администрирование сайта.
+
+### Навыки
+#### Back-end
+Языки: PHP 5-7, Python
+Фреймворки и CMS: MODx, Laravel, Yii, Drupal, 1C Битрикс
+
+#### Front-end
+Языки: Javascript
+Фреймворки: JQuery, VueJS, React
+Вёрстка: CSS, SCSS, Stylus, Photoshop, Ai
+
+#### Окружение
+Linux (Ubuntu, Debian, Arch, Deepin, Solus)
+Docker, Vagrant, XAMPP, Ubuntu server на VirtualBox
+Git, Github, Bitbucket
+Composer, Webpack & Gulp
+
+#### БД
+MySQL
+
+#### Есть понимание
+ООП, PSR, SOLID, KISS
+
+### Последние прочитанные книги
+1. [Использование Docker](https://www.ozon.ru/context/detail/id/139411597 "Использование Docker"),
+2. [Design Patterns in PHP and Laravel](https://www.amazon.com/Design-Patterns-Laravel-Kelt-Dockins/dp/1484224507 "Design Patterns in PHP and Laravel"),
+3. [Джедайские техники](https://www.ozon.ru/context/detail/id/140376487/ "Джедайские техники"),
+4. [Чистый код: создание, анализ и рефакторинг](https://www.ozon.ru/context/detail/id/28336354/ "Чистый код: создание, анализ и рефакторинг"),
+5. [Head First. Паттерны проектирования](https://www.ozon.ru/context/detail/id/144233005/ "Head First. Паттерны проектирования"),
+6. [PHP. Объекты, шаблоны и методики программирования](https://www.ozon.ru/context/detail/id/148737571/ "PHP. Объекты, шаблоны и методики программирования").
+
+### Контакты
+Заинтересованы в сотрудничестве?  Вы можете отправить мне сообщение в социальных сетях:
+* [Мой круг](https://moikrug.ru/ivanopol "Мой круг")  
+* [LinkedIn](https://www.linkedin.com/in/ivanopol "LinkedIn")
