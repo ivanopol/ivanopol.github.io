@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/assets/images/logo_animation.gif" alt="Ivanov Dmitry portfolio"/>
+  <img src="./static/img/logo_animation.gif" alt="Ivanov Dmitry portfolio"/>
 </p>
 
 # Дмитрий Иванов
