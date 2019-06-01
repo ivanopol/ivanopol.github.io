@@ -1,5 +1,9 @@
 <p align="center">
+<<<<<<< HEAD
   <img src="./static/img/logo_animation.gif" alt="Ivanov Dmitry portfolio"/>
+=======
+  <img src="./static/img//logo_animation.gif" alt="Ivanov Dmitry portfolio"/>
+>>>>>>> 6a0515821977461e142d4da000ea6cb657c88f04
 </p>
 
 # Дмитрий Иванов
