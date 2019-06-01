@@ -1,93 +1,87 @@
-.tooltip {
-  display: block !important;
-  z-index: 10000;
-
-  .tooltip-inner {
-    margin: 0 auto;
-    background: active;
-    color: black_active;
-    font-size: 18px;
-    line-height: 24px;
-    border-radius: 16px;
-    padding: 30px 40px;
-  }
-
-  .tooltip-arrow {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    position: absolute;
-    margin: 5px;
-    border-color: active;
-  }
-
-  &[x-placement^="top"] {
-    margin-bottom: 15px;
-
-    .tooltip-arrow {
-      border-width: 15px 15px 0 15px;
-      border-left-color: transparent !important;
-      border-right-color: transparent !important;
-      border-bottom-color: transparent !important;
-      bottom: -15px;
-      left: calc(50% - 5px);
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-  }
-
-  &.popover {
-    $color: #f9f9f9;
-    outline: none;
-    width: 30vw;
+.tooltip 
+  display: block !important
+  z-index: 10000
+  .tooltip-inner 
+    margin: 0 auto
+    background: active
+    color: black_active
+    font-size: 18px
+    line-height: 24px
+    border-radius: 16px
+    padding: 30px 40px
+  .tooltip-arrow 
+    width: 0
+    height: 0
+    border-style: solid
+    position: absolute
+    margin: 5px
+    border-color: active
+  &[x-placement^="top"]
+    margin-bottom: 15px
+    .tooltip-arrow 
+      border-width: 15px 15px 0 15px
+      border-left-color: transparent !important
+      border-right-color: transparent !important
+      border-bottom-color: transparent !important
+      bottom: -15px
+      left: calc(50% - 5px)
+      margin-top: 0
+      margin-bottom: 0
+  &.popover 
+    $color: #f9f9f9
+    outline: none
+    width: 30vw
     max-width: 570px
-
-    .popover-inner {
-      background: $color;
-      color: black;
-      padding: 24px 35px;
-      border-radius: 24px;
-      box-shadow: 0 5px 30px rgba(black, .2);
-    }
-
-    .popover-arrow {
-      border-color: $color;
-    }
-  }
-
-  &[x-placement^="bottom"] {
-    margin-top: 15px;
-
-    .tooltip-arrow {
-      border-width: 0 15px 15px 15px;
-      border-left-color: transparent !important;
-      border-right-color: transparent !important;
-      border-top-color: transparent !important;
-      top: -15px;
-      left: calc(50% - 15px);
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-  }
-
+    .popover-inner 
+      background: $color
+      color: black
+      padding: 24px 35px
+      border-radius: 24px
+      box-shadow: 0 5px 30px rgba(black, .2)
+    .popover-arrow 
+      border-color: $color
+  &[x-placement^="bottom"] 
+    margin-top: 15px
+    .tooltip-arrow 
+      border-width: 0 15px 15px 15px
+      border-left-color: transparent !important
+      border-right-color: transparent !important
+      border-top-color: transparent !important
+      top: -15px
+      left: calc(50% - 15px)
+      margin-top: 0
+      margin-bottom: 0
   &[aria-hidden='true'] {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .15s, visibility .15s;
+    visibility: hidden
+    opacity: 0
+    transition: opacity .15s, visibility .15s
   }
-
   &[aria-hidden='false'] {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity .15s;
+    visibility: visible
+    opacity: 1
+    transition: opacity .15s
   }
-}
-
-.tooltip_other {
-  border-bottom: 2px dotted gray;
-  cursor: pointer;
-}
-
-.v-popover>div {
+.tooltip_other 
+  border-bottom: 2px dotted gray
+  cursor: pointer
+.v-popover>div 
   display: block!important
-}
+
+@media screen and (max-width : 499px) 
+  .tooltip
+      .tooltip-inner
+        font-size: 14px
+        line-height: 18px
+      &.popover
+        width 80vw
+        .popover-inner
+          padding: 20px 25px   
+@media screen and (min-width : 500px) and (max-width : 768px)
+  .tooltip
+      .tooltip-inner
+        font-size: 22px
+        line-height: 28px
+      &.popover
+        width 80vw
+        .popover-inner
+          padding: 20px 25px                 
