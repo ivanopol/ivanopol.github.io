@@ -31,8 +31,8 @@ get-vw(target)
       height get-vw(8px)   
     p
       font-size get-vw(23px)
-      line-height get-vw(36px)
-      margin get-vw(15px) 0 get-vw(40px)
+      line-height get-vw(32px)
+      margin get-vw(25px) 0 get-vw(40px)
   .illustration
     #illustration
       #background
@@ -153,6 +153,14 @@ get-vw(target)
       padding-bottom get-vw(70px)
       padding-left get-vw(74px)
       border-left get-vw(9px) solid dark_active
+      ul 
+        margin-bottom 10px
+        li
+          margin-left get-vw(10px)
+          &:before
+            width: get-vw(15px)
+            height: get-vw(3px)
+            left: get-vw(-8px)      
       &:last-child
         padding-bottom get-vw(50px)
       &:before

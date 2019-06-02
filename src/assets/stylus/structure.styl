@@ -46,8 +46,8 @@
     border-radius 20px
   p
     color gray
-    width 80%
-    max-width 438px
+    width 95%
+    max-width 500px
   .button
     float left
     &:hover
@@ -147,7 +147,18 @@
     margin 0 auto
     width 61% 
     max-width 904px
-    position relative  
+    position relative
+    p
+      margin-bottom 10px
+    ul 
+      li
+        position relative
+        &:before
+          content: ''
+          display: inline-block
+          position: relative
+          background-color: #fda75f
+          vertical-align: middle    
     &:last-child
       border-left-color transparent
     &:before
