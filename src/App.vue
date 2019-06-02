@@ -385,7 +385,7 @@
                   placement="top"
                 )
                   div.skills_row
-                    div.skills_row_name CSS, SCSS, Stylus
+                    div.skills_row_name CSS, Stylus
                     div.skills_row_value
                       div.skills_row_value_100.skills_row_value_up
                   template(
@@ -396,7 +396,7 @@
                   placement="top"
                 )
                   div.skills_row
-                    div.skills_row_name Photoshop, Ai
+                    div.skills_row_name Photoshop
                     div.skills_row_value
                       div.skills_row_value_100.skills_row_value_up
                   template(
