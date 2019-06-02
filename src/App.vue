@@ -35,7 +35,7 @@
                 | Ниже вы&nbsp;можете узнать подробную информацию обо мне, моём опыте и&nbsp;навыках.
                 | Стек: PHP, JS, MySQL, Linux.
               div.button_wrapper
-                a(href="./static/Portfolio_SPA.pdf"
+                a(href="./static/resume_ivanov_dmitriy.pdf"
                 class="button"
                 download="resume_ivanov_dmitriy"
                 ) Скачать Резюме
