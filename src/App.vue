@@ -552,11 +552,11 @@
                 img(
                   src="./assets/svg/contacts/linkedin.svg"
                 )
-    vue-ya-metrica(
-      :counter="53908072"
-      enable-hash=true
-      enable-webvisor=true
-    )
+      vue-ya-metrica(
+        :counter=53908072
+        enable-hash=true
+        enable-webvisor=true
+      )
 </template>
 
 <script>
