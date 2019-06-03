@@ -82,7 +82,7 @@
             div.content_wrapper
               div.img_wrapper
                 img(
-                  src="./assets/images/pnipu.png"
+                  src="./assets/images/pnipu.jpg"
                   class="pnipu_img"
                   alt="Логотип ПНИПУ"
                 )
