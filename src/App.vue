@@ -657,7 +657,7 @@ export default {
 
       document.getElementById('messages').appendChild(messageResponse)
 
-      this.axios.post('//ivanopyy.bget.ru', data, options)
+      this.axios.post('http://ivanopol.ru', data, options)
         .then(response => {
           if (response.status === 200) {
             var successFunc = function () {
