@@ -29,14 +29,13 @@ var VueScrollProgress = {
         windowScrollPercents = 0
 
         function getHeight () {
-          // height = (document.documentElement.scrollHeight - document.documentElement.clientHeight)
           height = document.getElementById('greeting').clientHeight
           height += document.getElementById('history').clientHeight / 3
           height += document.getElementById('experience').clientHeight
-          height += document.getElementById('skills').clientHeight / 2
+          height += document.getElementById('skills').clientHeight / 2.7
           height += document.getElementById('books').clientHeight
           height += document.getElementById('contacts').clientHeight
-          height -= Math.ceil(document.documentElement.clientHeight + (document.documentElement.clientHeight / 100 * 19.33))
+          height -= Math.ceil(document.documentElement.clientHeight)
         }
 
         const debounce = (func, wait, immediate) => {
