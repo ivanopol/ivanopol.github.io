@@ -663,7 +663,7 @@ export default {
 
       document.getElementById('messages').appendChild(messageResponse)
 
-      this.axios.post('https://ivanopol.ru/mail/', data, options)
+      this.axios.post('https://ivanopol.ru/mail/github.php', data, options)
         .then(response => {
           if (response.status === 200) {
             var successFunc = function () {
