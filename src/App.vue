@@ -552,11 +552,11 @@
                 img(
                   src="./assets/svg/contacts/linkedin.svg"
                 )
-      vue-ya-metrica(
-        :counter=53908072
-        enable-hash=true
-        enable-webvisor=true
-      )
+    vue-ya-metrica(
+      :counter="53908072"
+      enable-hash=true
+      enable-webvisor=true
+    )
 </template>
 
 <script>
@@ -663,7 +663,7 @@ export default {
 
       document.getElementById('messages').appendChild(messageResponse)
 
-      this.axios.post('http://ivanopol.ru/mail/', data, options)
+      this.axios.post('https://ivanopol.ru/mail/', data, options)
         .then(response => {
           if (response.status === 200) {
             var successFunc = function () {

@@ -6,7 +6,7 @@
 ### BACKEND DEVELOPER
 Привет, меня зовут Дмитрий и&nbsp;это моё портфолио. Я&nbsp;занимаюсь веб-программированием уже больше 9-ти лет. Ниже вы&nbsp;можете узнать подробную информацию обо мне, моём опыте и&nbsp;навыках. Стек: PHP, JS, MySQL, Linux..
 
-[Сайт](https://ivanopol.github.io "Сайт")
+[Сайт](https://ivanopol.ru "Сайт")
 [Скачать резюме](https://ivanopol.github.io/static/resume_ivanov_dmitriy.pdf "Скачать резюме")
 
 ### История
