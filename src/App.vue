@@ -38,6 +38,7 @@
                 a(href="./static/resume_ivanov_dmitriy.pdf"
                 class="button"
                 download="resume_ivanov_dmitriy"
+                v-on:click="reachGoal"
                 ) Скачать Резюме
                   span.icon_pdf
             div.block.illustration
@@ -552,11 +553,6 @@
                 img(
                   src="./assets/svg/contacts/linkedin.svg"
                 )
-    vue-ya-metrica(
-      :counter="53908072"
-      enable-hash=true
-      enable-webvisor=true
-    )
 </template>
 
 <script>
@@ -564,7 +560,6 @@ import IconLogo from './components/icons/IconLogo.vue'
 import IconBorn from './components/icons/IconBorn.vue'
 import AppIllustrationIcon from './components/AppIllustrationIcon.vue'
 import { Reveal } from 'vue-burger-menu'
-import VueYaMetrica from 'vue-ya-metrica'
 
 export default {
   data () {
@@ -626,6 +621,9 @@ export default {
     window.addEventListener('scroll', this.handleScroll)
   },
   methods: {
+    reachGoal (metrika) {
+      metrika(53939236, 'reachGoal', 'download_resume')
+    },
     onSubmit () {
       if (this.form.message === '') {
         this.form.submitStatus = 'empty'
@@ -791,8 +789,7 @@ export default {
     IconLogo,
     IconBorn,
     AppIllustrationIcon,
-    Reveal,
-    VueYaMetrica
+    Reveal
   }
 }
 </script>
