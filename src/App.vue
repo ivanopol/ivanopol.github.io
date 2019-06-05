@@ -38,7 +38,6 @@
                 a(href="./static/resume_ivanov_dmitriy.pdf"
                 class="button"
                 download="resume_ivanov_dmitriy"
-                v-on:click="reachGoal"
                 ) Скачать Резюме
                   span.icon_pdf
             div.block.illustration
@@ -621,9 +620,6 @@ export default {
     window.addEventListener('scroll', this.handleScroll)
   },
   methods: {
-    reachGoal (metrika) {
-      metrika(53939236, 'reachGoal', 'download_resume')
-    },
     onSubmit () {
       if (this.form.message === '') {
         this.form.submitStatus = 'empty'
