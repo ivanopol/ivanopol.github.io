@@ -35,9 +35,11 @@
                 | Ниже вы&nbsp;можете узнать подробную информацию обо мне, моём опыте и&nbsp;навыках.
                 | Стек: PHP, JS, MySQL, Linux.
               div.button_wrapper
-                a(href="./static/resume_ivanov_dmitriy.pdf"
-                class="button"
-                download="resume_ivanov_dmitriy"
+                a(
+                  href="./static/resume_ivanov_dmitriy.pdf"
+                  class="button"
+                  download="resume_ivanov_dmitriy"
+                  onclick="ym('53939236', 'reachGoal', 'download_resume')"
                 ) Скачать Резюме
                   span.icon_pdf
             div.block.illustration
@@ -247,7 +249,9 @@
                 v-popover(
                   placement="top"
                 )
-                  div.skills_row
+                  div.skills_row(
+                    onclick="ym('53939236', 'reachGoal', 'php')"
+                  )
                     div.skills_row_name PHP 5-7
                     div.skills_row_value
                       div.skills_row_value_100.skills_row_value_up
@@ -258,7 +262,9 @@
                 v-popover(
                   placement="top"
                 )
-                  div.skills_row
+                  div.skills_row(
+                    onclick="ym('53939236', 'reachGoal', 'python')"
+                  )
                     div.skills_row_name Python
                     div.skills_row_value
                       div.skills_row_value_10.skills_row_value_up
@@ -272,7 +278,9 @@
                 v-popover(
                   placement="top"
                 )
-                  div.skills_row
+                  div.skills_row(
+                    onclick="ym('53939236', 'reachGoal', 'modx')"
+                  )
                     div.skills_row_name MODx
                     div.skills_row_value
                       div.skills_row_value_100.skills_row_value_down
@@ -283,7 +291,9 @@
                 v-popover(
                   placement="top"
                 )
-                  div.skills_row
+                  div.skills_row(
+                    onclick="ym('53939236', 'reachGoal', 'laravel')"
+                  )
                     div.skills_row_name Laravel
                     div.skills_row_value
                       div.skills_row_value_50.skills_row_value_up
@@ -294,7 +304,9 @@
                 v-popover(
                   placement="top"
                 )
-                  div.skills_row
+                  div.skills_row(
+                    onclick="ym('53939236', 'reachGoal', 'yii')"
+                  )
                     div.skills_row_name Yii
                     div.skills_row_value
                       div.skills_row_value_50.skills_row_value_down
@@ -305,7 +317,9 @@
                 v-popover(
                   placement="top"
                 )
-                  div.skills_row
+                  div.skills_row(
+                    onclick="ym('53939236', 'reachGoal', 'drupal')"
+                  )
                     div.skills_row_name Drupal
                     div.skills_row_value
                       div.skills_row_value_25.skills_row_value_down
@@ -316,7 +330,9 @@
                 v-popover(
                   placement="top"
                 )
-                  div.skills_row
+                  div.skills_row(
+                    onclick="ym('53939236', 'reachGoal', 'bitrix')"
+                  )
                     div.skills_row_name 1C Битрикс
                     div.skills_row_value
                       div.skills_row_value_10.skills_row_value_down
@@ -334,8 +350,10 @@
                 v-popover(
                   placement="top"
                 )
-                  div.skills_row
-                    div.skills_row_name Javascript
+                  div.skills_row(
+                    onclick="ym('53939236', 'reachGoal', 'javascript')"
+                  )
+                    div.skills_row_name JavaScript
                     div.skills_row_value
                       div.skills_row_value_50.skills_row_value_up
                   template(
@@ -348,7 +366,9 @@
                 v-popover(
                   placement="top"
                 )
-                  div.skills_row
+                  div.skills_row(
+                    onclick="ym('53939236', 'reachGoal', 'jquery')"
+                  )
                     div.skills_row_name JQuery
                     div.skills_row_value
                       div.skills_row_value_100.skills_row_value_down
@@ -359,7 +379,9 @@
                 v-popover(
                   placement="top"
                 )
-                  div.skills_row
+                  div.skills_row(
+                    onclick="ym('53939236', 'reachGoal', 'vuejs')"
+                  )
                     div.skills_row_name VueJS
                     div.skills_row_value
                       div.skills_row_value_25.skills_row_value_up
@@ -370,7 +392,9 @@
                 v-popover(
                   placement="top"
                 )
-                  div.skills_row
+                  div.skills_row(
+                    onclick="ym('53939236', 'reachGoal', 'react')"
+                  )
                     div.skills_row_name React
                     div.skills_row_value
                       div.skills_row_value_10.skills_row_value_up
@@ -384,7 +408,9 @@
                 v-popover(
                   placement="top"
                 )
-                  div.skills_row
+                  div.skills_row(
+                    onclick="ym('53939236', 'reachGoal', 'css')"
+                  )
                     div.skills_row_name CSS, Stylus
                     div.skills_row_value
                       div.skills_row_value_100.skills_row_value_up
@@ -395,7 +421,9 @@
                 v-popover(
                   placement="top"
                 )
-                  div.skills_row
+                  div.skills_row(
+                    onclick="ym('53939236', 'reachGoal', 'photoshop')"
+                  )
                     div.skills_row_name Photoshop
                     div.skills_row_value
                       div.skills_row_value_100.skills_row_value_up
@@ -409,7 +437,9 @@
                 v-popover(
                   placement="top"
                 )
-                  div.skills_other_list
+                  div.skills_other_list(
+                    onclick="ym('53939236', 'reachGoal', 'linux')"
+                  )
                     span.tooltip_other Linux (Ubuntu, Debian, Arch, Deepin, Solus)
                   template(
                     slot="popover"
@@ -432,8 +462,9 @@
             ul
               li
                 a(
-                href="https://www.ozon.ru/context/detail/id/139411597"
-                target="_blank"
+                  href="https://www.ozon.ru/context/detail/id/139411597"
+                  target="_blank"
+                  onclick="ym('53939236', 'reachGoal', 'books')"
                 )
                   img(
                     src="./assets/images/books/using_docker.jpg"
@@ -441,8 +472,9 @@
                   )
               li
                 a(
-                href="https://www.amazon.com/Design-Patterns-Laravel-Kelt-Dockins/dp/1484224507"
-                target="_blank"
+                  href="https://www.amazon.com/Design-Patterns-Laravel-Kelt-Dockins/dp/1484224507"
+                  target="_blank"
+                  onclick="ym('53939236', 'reachGoal', 'books')"
                 )
                   img(
                     src="./assets/images/books/design_patterns_in_php_and_laravel.jpg"
@@ -450,8 +482,9 @@
                   )
               li
                 a(
-                href="https://www.ozon.ru/context/detail/id/140376487/"
-                target="_blank"
+                  href="https://www.ozon.ru/context/detail/id/140376487/"
+                  target="_blank"
+                  onclick="ym('53939236', 'reachGoal', 'books')"
                 )
                   img(
                     src="./assets/images/books/djedaiskie_tehniki.jpg"
@@ -459,8 +492,9 @@
                   )
               li
                 a(
-                href="https://www.ozon.ru/context/detail/id/28336354/"
-                target="_blank"
+                  href="https://www.ozon.ru/context/detail/id/28336354/"
+                  target="_blank"
+                  onclick="ym('53939236', 'reachGoal', 'books')"
                 )
                   img(
                     src="./assets/images/books/chistiy_kod.jpg"
@@ -468,8 +502,9 @@
                   )
               li
                 a(
-                href="https://www.ozon.ru/context/detail/id/144233005/"
-                target="_blank"
+                  href="https://www.ozon.ru/context/detail/id/144233005/"
+                  target="_blank"
+                  onclick="ym('53939236', 'reachGoal', 'books')"
                 )
                   img(
                     src="./assets/images/books/patterny_proektirovania.jpg"
@@ -477,8 +512,9 @@
                   )
               li
                 a(
-                href="https://www.ozon.ru/context/detail/id/148737571/"
-                target="_blank"
+                  href="https://www.ozon.ru/context/detail/id/148737571/"
+                  target="_blank"
+                  onclick="ym('53939236', 'reachGoal', 'books')"
                 )
                   img(
                     src="./assets/images/books/php_objecty_shablony_i_metodiki.jpg"
@@ -522,6 +558,7 @@
             type="submit"
             class="button"
             value="Отправить"
+            onclick="ym('53939236', 'reachGoal', 'send')"
           )
         footer
           ul.contacts
@@ -530,6 +567,7 @@
                 href="https://moikrug.ru/ivanopol"
                 class="moi_krug"
                 target="_blank"
+                onclick="ym('53939236', 'reachGoal', 'moikrug')"
               )
                 img(
                   src="./assets/svg/contacts/moi_krug.svg"
@@ -539,6 +577,7 @@
                 href="https://github.com/ivanopol"
                 class="github"
                 target="_blank"
+                onclick="ym('53939236', 'reachGoal', 'github')"
               )
                 img(
                   src="./assets/svg/contacts/github.svg"
@@ -548,6 +587,7 @@
                 href="https://www.linkedin.com/in/ivanopol"
                 class="linkedin"
                 target="_blank"
+                onclick="ym('53939236', 'reachGoal', 'linkedin')"
               )
                 img(
                   src="./assets/svg/contacts/linkedin.svg"
