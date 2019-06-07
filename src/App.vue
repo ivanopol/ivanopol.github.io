@@ -20,7 +20,6 @@
             div.logo
               icon-logo
             nav
-              a(href="#greeting") Приветствие
               a(href="#history") История
               a(href="#experience") Опыт работы
               a(href="#skills") Навыки
@@ -189,46 +188,6 @@
             p
               | Работа с Zend Framework над системой сбора
               | заявок на кредиты в банки. Вёрстка.
-          div.timeline_block
-            span.date 2011 &mdash; 2012
-            span.company Тенториум
-            span.position Администратор сайтов в компании
-            p
-              | Администрировал и дорабатывал сайты:
-            ul
-              li
-                a(
-                  href="https://tentorium.ru"
-                  target="_blank"
-                    rel="nofollow"
-                ) tentorium.ru
-                |  (1C Битрикс)
-              li
-                span(
-                  class="no_site"
-                  title="Сайт уже не работает"
-                ) save-bee.ru (1C Битрикс)
-              li
-                | Внутренний корпоративный портал компании (1C Битрикс)
-              li
-                a(
-                  href="http://apispa.ru"
-                  target="_blank"
-                  rel="nofollow"
-                ) apispa.ru
-            p
-              | Также, занимался: разработкой электронного документооборота
-              | компании (разработка архитектуры&nbsp;БД, программирование под CMS Bitrix),
-              | разработкой модуля личного кабинета для tentorium.ru (отчёты, диаграммы,
-              | одноразовые ссылки на&nbsp;документы т.д.), написанием &laquo;гаджетов&raquo;
-              | для корпоративного портала, разработкой электронных конкурсов и&nbsp;тестов
-              | для корпоративного портала (на&nbsp;JQuery + MySQL) размещением информации
-              | и&nbsp;аккаунтов в&nbsp;социальных сетях.
-          div.timeline_block
-            span.date 2006 &mdash; 2011
-            p
-              | Разработка логотипов, веб-дизайна и сайтов.
-              | Свой первый интернет-магазин рыболовных товаров.
       div#skills
         div.container
           div.title Навыки
@@ -327,19 +286,6 @@
                     slot="popover"
                   )
                     p {{ skills.drupal }}
-                v-popover(
-                  placement="top"
-                )
-                  div.skills_row(
-                    onclick="ym('53939236', 'reachGoal', 'bitrix')"
-                  )
-                    div.skills_row_name 1C Битрикс
-                    div.skills_row_value
-                      div.skills_row_value_10.skills_row_value_down
-                  template(
-                    slot="popover"
-                  )
-                    p {{ skills.bitrix }}
           div(
             class="skills"
             v-if="tabs[1].active === true"
