@@ -138,22 +138,10 @@
             ul
               li
                 a(
-                  href="https://www.bestcreditoffers.com/compare-credit-cards-to-earn-rewards-150.php"
+                  href="http://www.ooo-modern.ru/"
                   target="_blank"
                   rel="nofollow"
-                ) Пример 1
-              li
-                a(
-                  href="https://www.bestcreditoffers.com/top-credit-cards-for-smart-spending.php"
-                  target="_blank"
-                  rel="nofollow"
-                ) Пример 2
-              li
-                a(
-                  href="https://www.bestcreditoffers.com/save-on-cruise-with-credit-card.php"
-                  target="_blank"
-                  rel="nofollow"
-                ) Пример 3
+                ) ooo-modern.ru
           div.timeline_block
             span.date 2014 &mdash; 2017
             span.company WBMS interactive
@@ -517,16 +505,6 @@
               )
                 img(
                   src="./assets/svg/contacts/moi_krug.svg"
-                )
-            li
-              a(
-                href="https://github.com/ivanopol"
-                class="github"
-                target="_blank"
-                onclick="ym('53939236', 'reachGoal', 'github')"
-              )
-                img(
-                  src="./assets/svg/contacts/github.svg"
                 )
             li
               a(
